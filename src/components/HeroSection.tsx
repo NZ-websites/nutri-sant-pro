@@ -1,0 +1,51 @@
+import { Button } from "@/components/ui/button";
+import doctorImg from "@/assets/doctor-portrait.jpg";
+
+const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
+  return (
+    <section id="accueil" className="relative pt-28 pb-16 md:pt-36 md:pb-24">
+      <div className="container">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <div className="inline-block px-3 py-1 rounded-full bg-sage-light text-sage text-xs font-semibold tracking-wide uppercase">
+              Médecin Nutritionniste
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              Expertise Médicale en{" "}
+              <span className="text-primary">Nutrition</span> &{" "}
+              <span className="text-sage">Santé</span>
+            </h1>
+            <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
+              Un accompagnement personnalisé et bienveillant pour retrouver votre équilibre alimentaire et améliorer durablement votre santé.
+            </p>
+            <div className="flex flex-wrap gap-4 pt-2">
+              <Button variant="cta" size="lg" onClick={onBookClick}>
+                Prendre Rendez-vous
+              </Button>
+              <Button variant="outline-primary" size="lg" asChild>
+                <a href="#cabinet">Découvrir le Cabinet</a>
+              </Button>
+            </div>
+          </div>
+          <div className="relative flex justify-center md:justify-end">
+            <div className="relative w-72 md:w-96 rounded-2xl overflow-hidden shadow-xl">
+              <img
+                src={doctorImg}
+                alt="Dr. Nutritionniste dans son cabinet"
+                width={800}
+                height={1024}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-4 -left-4 bg-card rounded-xl p-4 shadow-lg border border-border">
+              <p className="text-sm font-semibold text-primary">+15 ans d'expérience</p>
+              <p className="text-xs text-muted-foreground">Secteur 1 · Carte Vitale</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
