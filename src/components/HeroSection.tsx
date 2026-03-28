@@ -11,19 +11,18 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
               Médecin Nutritionniste
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Expertise Médicale en{" "}
-              <span className="text-primary">Nutrition</span> &{" "}
-              <span className="text-sage">Santé</span>
+              Dr. Xénia{" "}
+              <span className="text-primary">Zanardo</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              Un accompagnement personnalisé et bienveillant pour retrouver votre équilibre alimentaire et améliorer durablement votre santé.
+              Médecin Nutritionniste à Tours — Un accompagnement médical personnalisé et bienveillant pour retrouver votre équilibre alimentaire et améliorer durablement votre santé.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
               <Button variant="cta" size="lg" onClick={onBookClick}>
                 Prendre Rendez-vous
               </Button>
               <Button variant="outline-primary" size="lg" asChild>
-                <a href="#cabinet">Découvrir le Cabinet</a>
+                <a href="#parcours">En savoir plus</a>
               </Button>
             </div>
           </div>
@@ -31,14 +30,14 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
             <div className="relative w-72 md:w-96 rounded-2xl overflow-hidden shadow-xl">
               <img
                 src={doctorImg}
-                alt="Dr. Nutritionniste dans son cabinet"
+                alt="Dr. Xénia Zanardo — Médecin Nutritionniste à Tours"
                 width={800}
                 height={1024}
                 className="w-full h-auto object-cover"
               />
             </div>
             <div className="absolute -bottom-4 -left-4 bg-card rounded-xl p-4 shadow-lg border border-border">
-              <p className="text-sm font-semibold text-primary">+15 ans d'expérience</p>
+              <p className="text-sm font-semibold text-primary">Médecin Nutritionniste</p>
               <p className="text-xs text-muted-foreground">Secteur 1 · Carte Vitale</p>
             </div>
           </div>

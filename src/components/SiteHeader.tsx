@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Accueil", href: "#accueil" },
   { label: "Expertise", href: "#expertise" },
-  { label: "Le Cabinet", href: "#cabinet" },
+  { label: "Parcours", href: "#parcours" },
+  { label: "Tarifs", href: "#tarifs" },
   { label: "Infos Pratiques", href: "#infos" },
   { label: "Contact", href: "#contact" },
 ];
@@ -28,10 +28,9 @@ const SiteHeader = ({ onBookClick }: { onBookClick: () => void }) => {
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
         <a href="#accueil" className="flex items-center gap-2">
-          <span className="text-xl font-bold text-primary tracking-tight">Dr. Nutrition</span>
+          <span className="text-xl font-bold text-primary tracking-tight">Dr. Zanardo</span>
         </a>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((l) => (
             <a
@@ -47,13 +46,11 @@ const SiteHeader = ({ onBookClick }: { onBookClick: () => void }) => {
           </Button>
         </nav>
 
-        {/* Mobile toggle */}
         <button className="md:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile nav */}
       {mobileOpen && (
         <div className="md:hidden bg-card border-t border-border px-6 pb-6 pt-2 space-y-4 animate-fade-in-up">
           {navLinks.map((l) => (

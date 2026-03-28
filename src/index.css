@@ -24,7 +24,7 @@
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 90 22% 42%;
+    --accent: 160 64% 40%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -36,8 +36,8 @@
 
     --radius: 0.5rem;
 
-    --sage: 90 22% 42%;
-    --sage-light: 90 20% 95%;
+    --sage: 160 64% 40%;
+    --sage-light: 160 40% 95%;
     --sage-foreground: 0 0% 100%;
 
     --sidebar-background: 0 0% 98%;
@@ -63,7 +63,7 @@
     --secondary-foreground: 210 40% 98%;
     --muted: 217 33% 18%;
     --muted-foreground: 215 20% 65%;
-    --accent: 90 22% 42%;
+    --accent: 160 64% 40%;
     --accent-foreground: 210 40% 98%;
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;

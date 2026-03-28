@@ -1,23 +1,23 @@
-import { Apple, HeartPulse, Stethoscope } from "lucide-react";
+import { Apple, HeartPulse, Dumbbell } from "lucide-react";
 
 const expertises = [
   {
     icon: Apple,
     title: "Rééquilibrage Alimentaire",
     description:
-      "Un programme alimentaire sur mesure adapté à votre mode de vie, vos goûts et vos objectifs de santé.",
+      "Un programme alimentaire sur mesure adapté à votre mode de vie, vos goûts et vos objectifs de santé pour retrouver un poids de forme durable.",
   },
   {
     icon: HeartPulse,
-    title: "Nutrition Thérapeutique",
+    title: "Pathologies & Nutrition Thérapeutique",
     description:
-      "Prise en charge nutritionnelle des pathologies chroniques : diabète, cholestérol, maladies cardiovasculaires.",
+      "Prise en charge nutritionnelle des pathologies chroniques : diabète, cholestérol, maladies cardiovasculaires, troubles métaboliques.",
   },
   {
-    icon: Stethoscope,
-    title: "Suivi Post-Opératoire",
+    icon: Dumbbell,
+    title: "Nutrition Sportive",
     description:
-      "Accompagnement nutritionnel après chirurgie bariatrique ou digestive pour une récupération optimale.",
+      "Optimisation de l'alimentation pour la performance sportive, la récupération et la prévention des blessures liées à la nutrition.",
   },
 ];
 

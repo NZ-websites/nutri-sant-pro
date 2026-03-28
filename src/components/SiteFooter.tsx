@@ -6,22 +6,22 @@ const SiteFooter = () => {
       <div className="container">
         <div className="grid md:grid-cols-3 gap-10">
           <div>
-            <p className="text-lg font-bold mb-3">Dr. Nutrition</p>
+            <p className="text-lg font-bold mb-3">Dr. Xénia Zanardo</p>
             <p className="text-sm opacity-80 leading-relaxed">
-              Cabinet de Médecine Nutritionnelle. Consultations sur rendez-vous.
+              Médecin Nutritionniste à Tours. Consultations sur rendez-vous.
             </p>
           </div>
           <div>
             <p className="text-sm font-semibold mb-3">Contact rapide</p>
             <div className="space-y-2">
-              <a href="tel:+33123456789" className="flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity">
-                <Phone className="w-4 h-4" /> 01 23 45 67 89
+              <a href="tel:+33247056247" className="flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity">
+                <Phone className="w-4 h-4" /> 02 47 05 62 47
               </a>
-              <a href="mailto:contact@dr-nutrition.fr" className="flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity">
-                <Mail className="w-4 h-4" /> contact@dr-nutrition.fr
+              <a href="mailto:dr.x.zanardo@gmail.com" className="flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity">
+                <Mail className="w-4 h-4" /> dr.x.zanardo@gmail.com
               </a>
               <p className="flex items-center gap-2 text-sm opacity-80">
-                <MapPin className="w-4 h-4" /> 12 Rue de la Santé, 75014 Paris
+                <MapPin className="w-4 h-4" /> 30 Bd Heurteloup, 37000 Tours
               </p>
             </div>
           </div>
@@ -31,7 +31,7 @@ const SiteFooter = () => {
               <a href="#accueil" className="block hover:opacity-100 transition-opacity">Accueil</a>
               <a href="#expertise" className="block hover:opacity-100 transition-opacity">Expertise</a>
               <a href="#contact" className="block hover:opacity-100 transition-opacity">Contact</a>
-              <p className="pt-2 text-xs opacity-60">© {new Date().getFullYear()} Dr. Nutrition — Mentions légales</p>
+              <p className="pt-2 text-xs opacity-60">© {new Date().getFullYear()} Dr. Xénia Zanardo — Mentions légales</p>
             </div>
           </div>
         </div>
