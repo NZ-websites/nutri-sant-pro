@@ -1,6 +1,18 @@
-import { Clock, MapPin, CreditCard } from "lucide-react";
+import { Clock, MapPin, Phone, Mail } from "lucide-react";
 
 const infos = [
+  {
+    icon: MapPin,
+    title: "Adresse",
+    items: [
+      "30 Bd Heurteloup",
+      "37000 Tours",
+    ],
+    link: {
+      href: "https://www.google.com/maps/search/?api=1&query=30+Bd+Heurteloup+37000+Tours",
+      label: "Voir sur Google Maps →",
+    },
+  },
   {
     icon: Clock,
     title: "Horaires d'ouverture",
@@ -11,30 +23,19 @@ const infos = [
     ],
   },
   {
-    icon: MapPin,
-    title: "Adresse",
-    items: [
-      "12 Rue de la Santé",
-      "75014 Paris",
-      "Métro : Glacière (L6)",
-      "Parking souterrain disponible",
-    ],
-  },
-  {
-    icon: CreditCard,
-    title: "Tarifs & Conventionnement",
-    items: [
-      "Secteur 1 — Conventionné",
-      "Carte Vitale acceptée",
-      "Consultation : 25 € (base SS)",
-      "Tiers payant possible",
+    icon: Phone,
+    title: "Contact",
+    items: [],
+    contacts: [
+      { icon: Phone, href: "tel:+33247056247", label: "02 47 05 62 47" },
+      { icon: Mail, href: "mailto:dr.x.zanardo@gmail.com", label: "dr.x.zanardo@gmail.com" },
     ],
   },
 ];
 
 const PracticalInfoSection = () => {
   return (
-    <section id="infos" className="py-20 bg-card">
+    <section id="infos" className="py-20">
       <div className="container">
         <div className="text-center mb-14">
           <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Pratique</p>
@@ -44,17 +45,43 @@ const PracticalInfoSection = () => {
           {infos.map((info) => (
             <div
               key={info.title}
-              className="p-8 rounded-xl border border-border bg-background"
+              className="p-8 rounded-xl border border-border bg-card"
             >
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
                 <info.icon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-4">{info.title}</h3>
-              <ul className="space-y-2">
-                {info.items.map((item) => (
-                  <li key={item} className="text-sm text-muted-foreground">{item}</li>
-                ))}
-              </ul>
+              {info.items.length > 0 && (
+                <ul className="space-y-2">
+                  {info.items.map((item) => (
+                    <li key={item} className="text-sm text-muted-foreground">{item}</li>
+                  ))}
+                </ul>
+              )}
+              {info.link && (
+                <a
+                  href={info.link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-3 text-sm font-medium text-sage hover:underline"
+                >
+                  {info.link.label}
+                </a>
+              )}
+              {info.contacts && (
+                <div className="space-y-3">
+                  {info.contacts.map((c) => (
+                    <a
+                      key={c.label}
+                      href={c.href}
+                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <c.icon className="w-4 h-4" />
+                      {c.label}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>

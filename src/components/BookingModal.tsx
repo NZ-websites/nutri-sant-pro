@@ -32,8 +32,8 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
           </Button>
           <div className="text-center text-xs text-muted-foreground">ou</div>
           <Button variant="outline-primary" size="lg" className="w-full" asChild>
-            <a href="tel:+33123456789">
-              Appeler le 01 23 45 67 89
+            <a href="tel:+33247056247">
+              Appeler le 02 47 05 62 47
             </a>
           </Button>
         </div>

@@ -3,6 +3,7 @@ import SiteHeader from "@/components/SiteHeader";
 import HeroSection from "@/components/HeroSection";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import CabinetSection from "@/components/CabinetSection";
+import HonorairesSection from "@/components/HonorairesSection";
 import PracticalInfoSection from "@/components/PracticalInfoSection";
 import ContactSection from "@/components/ContactSection";
 import SiteFooter from "@/components/SiteFooter";
@@ -17,6 +18,7 @@ const Index = () => {
       <HeroSection onBookClick={() => setBookingOpen(true)} />
       <ExpertiseSection />
       <CabinetSection />
+      <HonorairesSection />
       <PracticalInfoSection />
       <ContactSection />
       <SiteFooter />
