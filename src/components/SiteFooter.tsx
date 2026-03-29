@@ -18,7 +18,7 @@ const SiteFooter = () => {
                 <Phone className="w-4 h-4" /> 02 47 05 62 47
               </a>
               <a href="mailto:dr.x.zanardo@gmail.com" className="flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity">
-                <Mail className="w-4 h-4" /> dr.x.zanardo@gmail.com
+                <Mail className="w-4 h-4" />
               </a>
               <p className="flex items-center gap-2 text-sm opacity-80">
                 <MapPin className="w-4 h-4" /> 30 Bd Heurteloup, 37000 Tours
