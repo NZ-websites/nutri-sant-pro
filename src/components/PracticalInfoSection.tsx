@@ -9,7 +9,7 @@ const infos = [
       "37000 Tours",
     ],
     link: {
-      href: "https://share.google/gkFq7bp8vxaBthQwq",
+      href: "https://www.google.com/maps/search/?api=1&query=Docteur+Xenia+Zanardo+30+Boulevard+Heurteloup+37000+Tours",
       label: "Voir sur Google Maps →",
     },
   },
