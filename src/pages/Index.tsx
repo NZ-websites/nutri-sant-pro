@@ -18,7 +18,7 @@ const Index = () => {
       <HeroSection onBookClick={() => setBookingOpen(true)} />
       <ExpertiseSection />
       <CabinetSection />
-      <HonorairesSection />
+      <HonorairesSection onBookClick={() => setBookingOpen(true)} />
       <PracticalInfoSection />
       <ContactSection />
       <SiteFooter />
