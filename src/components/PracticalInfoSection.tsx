@@ -5,6 +5,7 @@ const infos = [
     icon: MapPin,
     title: "Adresse",
     items: [
+      "Résidence Transparence – 4ᵉ étage",
       "30 Bd Heurteloup",
       "37000 Tours",
     ],

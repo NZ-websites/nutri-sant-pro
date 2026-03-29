@@ -18,7 +18,7 @@ const SiteFooter = () => {
                 <Phone className="w-4 h-4" /> 02 47 05 62 47
               </a>
               <p className="flex items-center gap-2 text-sm opacity-75">
-                <MapPin className="w-4 h-4" /> 30 Bd Heurteloup, 37000 Tours
+              <MapPin className="w-4 h-4" /> Résidence Transparence, 30 Bd Heurteloup, 37000 Tours
               </p>
             </div>
           </div>
