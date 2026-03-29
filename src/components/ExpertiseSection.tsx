@@ -1,5 +1,4 @@
 import { Apple, HeartPulse, Dumbbell, Microscope } from "lucide-react";
-import cabinetBg from "@/assets/cabinet-consultation.jpg";
 
 const expertises = [
   {
@@ -30,35 +29,23 @@ const expertises = [
 
 const ExpertiseSection = () => {
   return (
-    <section id="expertise" className="relative py-20 overflow-hidden">
-      {/* Background image with Ken Burns + dark overlay */}
-      <div className="absolute inset-0 -z-10">
-        <img
-          src={cabinetBg}
-          alt=""
-          className="w-full h-full object-cover animate-ken-burns will-change-transform"
-          style={{ animationDelay: "8s" }}
-          loading="lazy"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/65 via-black/55 to-black/65" />
-      </div>
-
-      <div className="container relative">
+    <section id="expertise" className="py-20 bg-secondary/40">
+      <div className="container">
         <div className="text-center mb-14">
-          <p className="text-sm font-semibold text-sage-light uppercase tracking-wide mb-2 drop-shadow-sm">Nos spécialités</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white drop-shadow-md">Domaines d'Expertise</h2>
+          <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Nos spécialités</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Domaines d'Expertise</h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {expertises.map((e) => (
             <div
               key={e.title}
-              className="group p-8 rounded-xl border border-white/10 bg-black/30 backdrop-blur-md hover:bg-black/40 transition-all duration-300 shadow-lg"
+              className="group p-8 rounded-xl border border-border bg-card hover:shadow-md transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center mb-5 group-hover:bg-sage transition-colors duration-300">
-                <e.icon className="w-6 h-6 text-sage-light group-hover:text-sage-foreground transition-colors duration-300" />
+              <div className="w-12 h-12 rounded-lg bg-sage-light flex items-center justify-center mb-5 group-hover:bg-sage transition-colors duration-300">
+                <e.icon className="w-6 h-6 text-sage group-hover:text-sage-foreground transition-colors duration-300" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-3">{e.title}</h3>
-              <p className="text-sm text-white/70 leading-relaxed">{e.description}</p>
+              <h3 className="text-lg font-semibold text-foreground mb-3">{e.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{e.description}</p>
             </div>
           ))}
         </div>
