@@ -6,28 +6,32 @@ const consultations = [
   {
     titre: "Consultation classique en Nutrition",
     duree: "40 min",
-    prix: "81 €",
+    prix: "51 €",
+    prixLabel: "Tarif net (partie nutrition)",
     description:
       "1ère consultation, consultation classique de suivi en nutrition – diététique.",
   },
   {
     titre: "Consultation complexe en Nutrition",
     duree: "50 min",
-    prix: "90 €",
+    prix: "60 €",
+    prixLabel: "Tarif net (partie nutrition)",
     description:
       "Chirurgie bariatrique envisagée, ou besoin d'optimiser sa santé globale.",
   },
   {
     titre: "Consultation courte de suivi",
     duree: "20 min",
-    prix: "63 €",
+    prix: "33 €",
+    prixLabel: "Tarif net (partie nutrition)",
     description:
       "Consultations périodiques rapprochées en nutrition – diététique.",
   },
   {
     titre: "Consultation approfondie",
     duree: "1 h – 1 h 30",
-    prix: "115 à 155 €",
+    prix: "85 à 125 €",
+    prixLabel: "Tarif net (partie nutrition)",
     description:
       "Médecine fonctionnelle, bilan approfondi avec bilans en laboratoire spécialisé.",
   },
@@ -36,13 +40,15 @@ const consultations = [
 const forfaits = [
   {
     titre: "Forfait 4 mois",
-    prix: "180 €",
+    prix: "190 €",
+    prixLabel: "Tarif net (partie nutrition)",
     detail: "Quel que soit le nombre de consultations sur cette période.",
     recommended: true,
   },
   {
     titre: "Forfait 6 mois",
-    prix: "240 €",
+    prix: "250 €",
+    prixLabel: "Tarif net (partie nutrition)",
     detail: "Quel que soit le nombre de consultations sur cette période.",
     recommended: false,
   },

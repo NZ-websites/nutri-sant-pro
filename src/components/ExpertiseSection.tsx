@@ -1,4 +1,4 @@
-import { Apple, HeartPulse, Dumbbell } from "lucide-react";
+import { Apple, HeartPulse, Dumbbell, Microscope } from "lucide-react";
 
 const expertises = [
   {
@@ -19,6 +19,12 @@ const expertises = [
     description:
       "Optimisation de l'alimentation pour la performance sportive et la récupération.",
   },
+  {
+    icon: Microscope,
+    title: "Médecine Fonctionnelle",
+    description:
+      "Optimiser le fonctionnement des systèmes biologiques du corps grâce à une approche scientifique et personnalisée : bilans approfondis, micronutrition et prévention active.",
+  },
 ];
 
 const ExpertiseSection = () => {
@@ -29,7 +35,7 @@ const ExpertiseSection = () => {
           <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Nos spécialités</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Domaines d'Expertise</h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {expertises.map((e) => (
             <div
               key={e.title}
