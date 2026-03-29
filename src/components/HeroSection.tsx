@@ -30,7 +30,7 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
             <div className="relative w-72 md:w-96 rounded-2xl overflow-hidden shadow-xl">
               <img
                 src={doctorImg}
-                alt="Dr. Xénia Zanardo — Médecin Nutritionniste à Tours"
+                alt="Dr Xénia Zanardo — Médecin Nutritionniste à Tours"
                 width={800}
                 height={1024}
                 className="w-full h-auto object-cover"
