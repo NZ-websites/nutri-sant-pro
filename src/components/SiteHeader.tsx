@@ -28,7 +28,7 @@ const SiteHeader = ({ onBookClick }: { onBookClick: () => void }) => {
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
         <a href="#accueil" className="flex items-center gap-2">
-          <span className="text-xl font-bold text-primary tracking-tight">Dr. Zanardo</span>
+          <span className="text-xl font-bold text-primary tracking-tight">{"\n"}</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

@@ -18,7 +18,7 @@ const CabinetSection = () => {
       <div className="container">
         <div className="text-center mb-14">
           <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Parcours</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Dr. Xénia Zanardo</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Xénia ZANARDO</h2>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
             Médecin Nutritionniste à Tours, le Dr. Zanardo bénéficie d'une formation riche et pluridisciplinaire en nutrition, métabolisme et santé.
           </p>
