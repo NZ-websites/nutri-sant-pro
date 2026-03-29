@@ -101,10 +101,10 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
 
         {/* Tarifs consultations */}
         <h3 className="text-xl font-bold text-foreground mb-2">
-          Honoraires pour Acte Hors Nomenclature de Nutrition
+          Honoraires
         </h3>
         <p className="text-xs text-muted-foreground mb-5 italic">
-          Les tarifs affichés correspondent uniquement à la partie nutrition (Acte Hors Nomenclature). La partie médicale est prise en charge séparément par la CPAM.
+          Les tarifs affichés correspondent uniquement à la partie nutrition (acte hors nomenclature). À ces honoraires s'ajoute la partie médicale prise en charge par la Caisse de Maladie.
         </p>
         <div className="grid sm:grid-cols-2 gap-4 mb-12">
           {consultations.map((c) => (
