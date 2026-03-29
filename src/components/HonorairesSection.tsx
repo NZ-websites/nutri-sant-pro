@@ -40,14 +40,14 @@ const consultations = [
 const forfaits = [
   {
     titre: "Forfait 4 mois",
-    prix: "190 €",
+    prix: "160 €",
     prixLabel: "Tarif net (partie nutrition)",
     detail: "Quel que soit le nombre de consultations sur cette période.",
     recommended: true,
   },
   {
     titre: "Forfait 6 mois",
-    prix: "250 €",
+    prix: "220 €",
     prixLabel: "Tarif net (partie nutrition)",
     detail: "Quel que soit le nombre de consultations sur cette période.",
     recommended: false,
