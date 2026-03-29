@@ -2,14 +2,14 @@ import { GraduationCap, Award, BookOpen, Brain, Globe } from "lucide-react";
 
 const formations = [
   { icon: GraduationCap, text: "Diplôme d'État de Docteur en Médecine" },
-  { icon: Award, text: "DES Complémentaire en Nutrition — Faculté de Médecine de Rennes" },
-  { icon: BookOpen, text: "DU de Diététique et Hygiène Alimentaire — Faculté de Médecine de Tours (2006)" },
-  { icon: BookOpen, text: "DU de Diabétologie Pratique — Faculté de Médecine de Tours (2005)" },
-  { icon: BookOpen, text: "Nutrition Humaine et Diététique Thérapeutique — Faculté de Médecine de Nancy (1998-1999)" },
-  { icon: BookOpen, text: "Certificat de Bases Conceptuelles de la Nutrition Humaine — Nancy (1996)" },
-  { icon: Brain, text: "Formation Initiale en Thérapies Cognitives et Comportementales — AFTCC (2015-2016)" },
-  { icon: Globe, text: "DIU de Santé de l'Enfant — Nancy, Strasbourg, Besançon" },
-  { icon: Globe, text: "DU de Médecine Tropicale — Faculté de Médecine de Nancy (1993)" },
+  { icon: Award, text: "DES Complémentaire en Nutrition\nFaculté de Médecine de Rennes" },
+  { icon: BookOpen, text: "DU de Diététique et Hygiène Alimentaire\nFaculté de Médecine de Tours (2006)" },
+  { icon: BookOpen, text: "DU de Diabétologie Pratique\nFaculté de Médecine de Tours (2005)" },
+  { icon: BookOpen, text: "Nutrition Humaine et Diététique Thérapeutique\nFaculté de Médecine de Nancy (1998-1999)" },
+  { icon: BookOpen, text: "Certificat de Bases Conceptuelles de la Nutrition Humaine\n\nFaculté de Médecine de Nancy 1996)" },
+  { icon: Brain, text: "Formation Initiale en Thérapies Cognitives et Comportementales\nAFTCC (2015-2016)" },
+  { icon: Globe, text: "DIU de Santé de l'Enfant\nNancy, Strasbourg, Besançon" },
+  { icon: Globe, text: "DU de Médecine Tropicale\nFaculté de Médecine de Nancy (1993)" },
 ];
 
 const CabinetSection = () => {
@@ -32,7 +32,7 @@ const CabinetSection = () => {
                   <div className="w-8 h-8 rounded-md bg-sage-light flex items-center justify-center shrink-0 mt-0.5">
                     <item.icon className="w-4 h-4 text-sage" />
                   </div>
-                  <p className="text-sm text-foreground leading-relaxed">{item.text}</p>
+                  <p className="text-sm text-foreground leading-relaxed whitespace-pre-line">{item.text}</p>
                 </div>
               ))}
             </div>
