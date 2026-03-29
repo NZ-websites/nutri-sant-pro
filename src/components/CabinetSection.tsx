@@ -28,8 +28,8 @@ const CabinetSection = () => {
             <h3 className="text-lg font-semibold text-foreground mb-6">Formation & Diplômes</h3>
             <div className="space-y-4">
               {formations.map((item) => (
-                <div key={item.text} className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-md bg-sage-light flex items-center justify-center shrink-0 mt-0.5">
+                <div key={item.text} className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-md bg-sage-light flex items-center justify-center shrink-0">
                     <item.icon className="w-4 h-4 text-sage" />
                   </div>
                   <p className="text-sm text-foreground leading-relaxed whitespace-pre-line">{item.text}</p>
