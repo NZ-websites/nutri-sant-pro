@@ -1,8 +1,9 @@
 import { GraduationCap, Award, BookOpen, Brain, Globe } from "lucide-react";
 
 const formations = [
-  { icon: GraduationCap, text: "Diplôme d'État de Docteur en Médecine" },
-  { icon: Award, text: "DES Complémentaire en Nutrition\nFaculté de Médecine de Rennes" },
+  { icon: GraduationCap, text: "Diplôme d'État de Docteur en Médecine\nFaculté de Médecine de Nancy" },
+  { icon: Award, text: "Diplôme d'Études Spécialisées Complémentaires (DES) en Nutrition\nFaculté de Médecine de Rennes" },
+  { icon: Award, text: "Diplôme Inter-Universitaire Européen MAPS\n(Micronutrition Alimentation Prévention Santé)" },
   { icon: BookOpen, text: "DU de Diététique et Hygiène Alimentaire\nFaculté de Médecine de Tours (2006)" },
   { icon: BookOpen, text: "DU de Diabétologie Pratique\nFaculté de Médecine de Tours (2005)" },
   { icon: BookOpen, text: "Nutrition Humaine et Diététique Thérapeutique\nFaculté de Médecine de Nancy (1998-1999)" },
@@ -41,8 +42,8 @@ const CabinetSection = () => {
             <div className="bg-card rounded-2xl border border-border p-8">
               <h3 className="text-lg font-semibold text-foreground mb-4">Une approche globale</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Chaque patient est unique. Le Dr Zanardo prend le temps d'écouter, de comprendre votre histoire
-                et vos objectifs pour construire ensemble un plan nutritionnel réaliste et durable, en s'appuyant sur une expertise médicale solide.
+              Chaque individu est unique. Le Dr Zanardo prend le temps d'écouter et de comprendre votre histoire
+                et vos objectifs pour construire avec vous un plan nutritionnel réaliste et durable et vous aider à faire évoluer vos habitudes pour atteindre vos objectifs grâce à une médecine personnalisée et participative.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">

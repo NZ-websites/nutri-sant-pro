@@ -8,28 +8,28 @@ const consultations = [
     duree: "40 min",
     prix: "51 €",
     description:
-      "1ère consultation, consultation classique de suivi en nutrition – diététique.",
+      "1ère consultation, consultation classique en nutrition-diététique.",
   },
   {
     titre: "Consultation complexe en Nutrition",
     duree: "50 min",
     prix: "60 €",
     description:
-      "Chirurgie bariatrique envisagée, ou besoin d'optimiser sa santé globale.",
+      "Chirurgie bariatrique, optimisation de sa santé globale.",
   },
   {
     titre: "Consultation courte de suivi",
     duree: "20 min",
     prix: "33 €",
     description:
-      "Consultations périodiques rapprochées en nutrition – diététique.",
+      "Consultations périodiques rapprochées en Nutrition-diététique.",
   },
   {
     titre: "Consultation approfondie",
     duree: "1 h – 1 h 30",
     prix: "85 à 125 €",
     description:
-      "Médecine fonctionnelle, bilan approfondi avec bilans en laboratoire spécialisé.",
+      "Médecine Fonctionnelle, étude approfondie avec bilans réalisés en laboratoire spécialisé.",
   },
 ];
 
@@ -73,7 +73,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
               <h3 className="font-semibold text-foreground">Consultations</h3>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Les consultations en médecine nutritionnelle mêlent consultation de médecine générale et consultation spécialisée en Nutrition. La prise en charge débute par un bilan médical et nutritionnel, ainsi que le recueil de vos habitudes de vie et événements marquants. Il se poursuit avec des exercices de mise en situation afin d'identifier les comportements inadaptés ou perfectibles, un changement d'habitudes minimal et un éventuel bilan biologique complémentaire. Ceci nous permet de co-construire un programme personnalisé adapté à vos objectifs de santé.
+              Les consultations en médecine nutritionnelle mêlent consultation de médecine générale et consultation spécialisée en Nutrition. La prise en charge débute par un bilan médical et nutritionnel, ainsi que le recueil de vos habitudes de vie et événements marquants. Il se poursuit avec des exercices de mise en situation chez vous afin d'identifier les comportements inadaptés ou perfectibles, un changement d'habitudes minimal et un éventuel bilan biologique complémentaire. Ceci nous permet de co-construire un programme personnalisé adapté à vos objectifs de santé.
             </p>
           </div>
 
@@ -101,7 +101,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
 
         {/* Tarifs consultations */}
         <h3 className="text-xl font-bold text-foreground mb-2">
-          Consultations
+          Honoraires pour Acte Hors Nomenclature de Nutrition
         </h3>
         <p className="text-xs text-muted-foreground mb-5 italic">
           Les tarifs affichés correspondent uniquement à la partie nutrition (Acte Hors Nomenclature). La partie médicale est prise en charge séparément par la CPAM.
