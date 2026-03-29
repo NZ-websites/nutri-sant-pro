@@ -6,28 +6,32 @@ const consultations = [
   {
     titre: "Consultation classique en Nutrition",
     duree: "40 min",
-    prix: "81 €",
+    prix: "51 €",
+    prixLabel: "Tarif net (partie nutrition)",
     description:
       "1ère consultation, consultation classique de suivi en nutrition – diététique.",
   },
   {
     titre: "Consultation complexe en Nutrition",
     duree: "50 min",
-    prix: "90 €",
+    prix: "60 €",
+    prixLabel: "Tarif net (partie nutrition)",
     description:
       "Chirurgie bariatrique envisagée, ou besoin d'optimiser sa santé globale.",
   },
   {
     titre: "Consultation courte de suivi",
     duree: "20 min",
-    prix: "63 €",
+    prix: "33 €",
+    prixLabel: "Tarif net (partie nutrition)",
     description:
       "Consultations périodiques rapprochées en nutrition – diététique.",
   },
   {
     titre: "Consultation approfondie",
     duree: "1 h – 1 h 30",
-    prix: "115 à 155 €",
+    prix: "85 à 125 €",
+    prixLabel: "Tarif net (partie nutrition)",
     description:
       "Médecine fonctionnelle, bilan approfondi avec bilans en laboratoire spécialisé.",
   },
@@ -36,13 +40,15 @@ const consultations = [
 const forfaits = [
   {
     titre: "Forfait 4 mois",
-    prix: "180 €",
+    prix: "190 €",
+    prixLabel: "Tarif net (partie nutrition)",
     detail: "Quel que soit le nombre de consultations sur cette période.",
     recommended: true,
   },
   {
     titre: "Forfait 6 mois",
-    prix: "240 €",
+    prix: "250 €",
+    prixLabel: "Tarif net (partie nutrition)",
     detail: "Quel que soit le nombre de consultations sur cette période.",
     recommended: false,
   },
@@ -120,7 +126,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
               className="rounded-xl border border-border bg-card p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow"
             >
               <div>
-                <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center justify-between mb-1">
                   <h4 className="font-semibold text-foreground text-sm">
                     {c.titre}
                   </h4>
@@ -128,6 +134,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
                     {c.prix}
                   </span>
                 </div>
+                <p className="text-[10px] text-muted-foreground/70 mb-2">{c.prixLabel}</p>
                 <div className="flex items-center gap-1 text-xs text-muted-foreground mb-2">
                   <Clock className="w-3.5 h-3.5" />
                   {c.duree}
@@ -173,9 +180,10 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
                 <h4 className="font-semibold text-foreground mb-1">
                   {f.titre}
                 </h4>
-                <p className="text-3xl font-bold text-primary tabular-nums mb-2">
+                <p className="text-3xl font-bold text-primary tabular-nums mb-1">
                   {f.prix}
                 </p>
+                <p className="text-[10px] text-muted-foreground/70 mb-2">{f.prixLabel}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {f.detail}
                 </p>
@@ -192,10 +200,15 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
             </div>
           ))}
         </div>
-        <p className="text-xs text-muted-foreground italic mb-12">
-          NB : Au forfait « Nutrition » s'ajoute, à chaque rendez-vous, le
-          règlement de la consultation médicale (sauf bénéficiaires de la CMU).
-        </p>
+        <div className="rounded-lg border border-border bg-secondary/60 p-4 text-xs text-muted-foreground leading-relaxed mb-12 space-y-2">
+          <p>
+            <strong className="text-foreground">Important :</strong> Les forfaits incluent exclusivement la partie nutrition.
+            La partie médicale remboursable par la CPAM n'est pas incluse dans le forfait.
+          </p>
+          <p>
+            Le patient doit impérativement se munir de sa <strong className="text-foreground">carte vitale</strong> pour chaque séance.
+          </p>
+        </div>
 
         {/* Conventionnement */}
         <div className="grid sm:grid-cols-2 gap-4">

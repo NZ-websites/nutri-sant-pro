@@ -20,7 +20,7 @@ const CabinetSection = () => {
           <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Parcours</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Xénia ZANARDO</h2>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
-            Médecin Nutritionniste à Tours, le Dr. Zanardo bénéficie d'une formation riche et pluridisciplinaire en nutrition, métabolisme et santé.
+            Médecin Nutritionniste à Tours, le Dr Zanardo propose une approche de Médecine Intégrative, s'appuyant sur une formation riche et pluridisciplinaire en nutrition, métabolisme et santé.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-16 items-start">
@@ -41,7 +41,7 @@ const CabinetSection = () => {
             <div className="bg-card rounded-2xl border border-border p-8">
               <h3 className="text-lg font-semibold text-foreground mb-4">Une approche globale</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Chaque patient est unique. Le Dr. Zanardo prend le temps d'écouter, de comprendre votre histoire
+                Chaque patient est unique. Le Dr Zanardo prend le temps d'écouter, de comprendre votre histoire
                 et vos objectifs pour construire ensemble un plan nutritionnel réaliste et durable, en s'appuyant sur une expertise médicale solide.
               </p>
             </div>
