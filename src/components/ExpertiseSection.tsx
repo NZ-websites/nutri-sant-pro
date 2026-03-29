@@ -1,4 +1,4 @@
-import { Apple, HeartPulse, Dumbbell, Microscope } from "lucide-react";
+import { Apple, HeartPulse, Microscope } from "lucide-react";
 
 const expertises = [
   {
@@ -29,7 +29,7 @@ const ExpertiseSection = () => {
           <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Nos spécialités</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Domaines d'Expertise</h2>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {expertises.map((e) => (
             <div
               key={e.title}

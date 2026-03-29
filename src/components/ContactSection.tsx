@@ -25,7 +25,7 @@ const ContactSection = () => {
             </div>
             <h3 className="text-lg font-semibold text-foreground">Adresse</h3>
             <p className="text-sm text-muted-foreground">
-              30 Boulevard Heurteloup<br />37000 Tours
+              Résidence Transparence – 4ᵉ étage<br />30 Boulevard Heurteloup<br />37000 Tours
             </p>
             <a
               href="https://www.google.com/maps/search/?api=1&query=Docteur+Xenia+Zanardo+30+Boulevard+Heurteloup+37000+Tours"
