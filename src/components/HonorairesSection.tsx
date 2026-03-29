@@ -200,10 +200,15 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
             </div>
           ))}
         </div>
-        <p className="text-xs text-muted-foreground italic mb-12">
-          NB : Au forfait « Nutrition » s'ajoute, à chaque rendez-vous, le
-          règlement de la consultation médicale (sauf bénéficiaires de la CMU).
-        </p>
+        <div className="rounded-lg border border-border bg-secondary/60 p-4 text-xs text-muted-foreground leading-relaxed mb-12 space-y-2">
+          <p>
+            <strong className="text-foreground">Important :</strong> Les forfaits incluent exclusivement la partie nutrition.
+            La partie médicale remboursable par la CPAM n'est pas incluse dans le forfait.
+          </p>
+          <p>
+            Le patient doit impérativement se munir de sa <strong className="text-foreground">carte vitale</strong> pour chaque séance.
+          </p>
+        </div>
 
         {/* Conventionnement */}
         <div className="grid sm:grid-cols-2 gap-4">
