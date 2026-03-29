@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 
 const SiteFooter = () => {
   return (
@@ -16,9 +16,6 @@ const SiteFooter = () => {
             <div className="space-y-2">
               <a href="tel:+33247056247" className="flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity">
                 <Phone className="w-4 h-4" /> 02 47 05 62 47
-              </a>
-              <a href="mailto:dr.x.zanardo@gmail.com" className="flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity">
-                <Mail className="w-4 h-4" />
               </a>
               <p className="flex items-center gap-2 text-sm opacity-80">
                 <MapPin className="w-4 h-4" /> 30 Bd Heurteloup, 37000 Tours
