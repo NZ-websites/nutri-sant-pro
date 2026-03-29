@@ -17,7 +17,7 @@ const expertises = [
     icon: Dumbbell,
     title: "Nutrition Sportive",
     description:
-      "Optimisation de l'alimentation pour la performance sportive, la récupération et la prévention des blessures liées à la nutrition.",
+      "Optimisation de l'alimentation pour la performance sportive et la récupération.",
   },
 ];
 
