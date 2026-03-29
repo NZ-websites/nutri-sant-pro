@@ -28,7 +28,7 @@ const ContactSection = () => {
               30 Boulevard Heurteloup<br />37000 Tours
             </p>
             <a
-              href="https://share.google/gkFq7bp8vxaBthQwq"
+              href="https://www.google.com/maps/search/?api=1&query=Docteur+Xenia+Zanardo+30+Boulevard+Heurteloup+37000+Tours"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-sm font-medium text-sage hover:underline"
