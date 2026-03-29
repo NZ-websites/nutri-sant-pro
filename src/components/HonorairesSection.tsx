@@ -126,7 +126,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
               className="rounded-xl border border-border bg-card p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow"
             >
               <div>
-                <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center justify-between mb-1">
                   <h4 className="font-semibold text-foreground text-sm">
                     {c.titre}
                   </h4>
@@ -134,6 +134,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
                     {c.prix}
                   </span>
                 </div>
+                <p className="text-[10px] text-muted-foreground/70 mb-2">{c.prixLabel}</p>
                 <div className="flex items-center gap-1 text-xs text-muted-foreground mb-2">
                   <Clock className="w-3.5 h-3.5" />
                   {c.duree}
@@ -179,9 +180,10 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
                 <h4 className="font-semibold text-foreground mb-1">
                   {f.titre}
                 </h4>
-                <p className="text-3xl font-bold text-primary tabular-nums mb-2">
+                <p className="text-3xl font-bold text-primary tabular-nums mb-1">
                   {f.prix}
                 </p>
+                <p className="text-[10px] text-muted-foreground/70 mb-2">{f.prixLabel}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {f.detail}
                 </p>
