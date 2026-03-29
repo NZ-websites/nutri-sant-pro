@@ -7,7 +7,6 @@ const consultations = [
     titre: "Consultation classique en Nutrition",
     duree: "40 min",
     prix: "51 €",
-    prixLabel: "Tarif net (partie nutrition)",
     description:
       "1ère consultation, consultation classique de suivi en nutrition – diététique.",
   },
@@ -15,7 +14,6 @@ const consultations = [
     titre: "Consultation complexe en Nutrition",
     duree: "50 min",
     prix: "60 €",
-    prixLabel: "Tarif net (partie nutrition)",
     description:
       "Chirurgie bariatrique envisagée, ou besoin d'optimiser sa santé globale.",
   },
@@ -23,7 +21,6 @@ const consultations = [
     titre: "Consultation courte de suivi",
     duree: "20 min",
     prix: "33 €",
-    prixLabel: "Tarif net (partie nutrition)",
     description:
       "Consultations périodiques rapprochées en nutrition – diététique.",
   },
@@ -31,7 +28,6 @@ const consultations = [
     titre: "Consultation approfondie",
     duree: "1 h – 1 h 30",
     prix: "85 à 125 €",
-    prixLabel: "Tarif net (partie nutrition)",
     description:
       "Médecine fonctionnelle, bilan approfondi avec bilans en laboratoire spécialisé.",
   },
@@ -41,14 +37,12 @@ const forfaits = [
   {
     titre: "Forfait 4 mois",
     prix: "160 €",
-    prixLabel: "Tarif net (partie nutrition)",
     detail: "Quel que soit le nombre de consultations sur cette période.",
     recommended: true,
   },
   {
     titre: "Forfait 6 mois",
     prix: "220 €",
-    prixLabel: "Tarif net (partie nutrition)",
     detail: "Quel que soit le nombre de consultations sur cette période.",
     recommended: false,
   },
@@ -116,9 +110,12 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
         </div>
 
         {/* Tarifs consultations */}
-        <h3 className="text-xl font-bold text-foreground mb-5">
+        <h3 className="text-xl font-bold text-foreground mb-2">
           Consultations
         </h3>
+        <p className="text-xs text-muted-foreground mb-5 italic">
+          Les tarifs affichés correspondent uniquement à la partie nutrition (Acte Hors Nomenclature). La partie médicale est prise en charge séparément par la CPAM.
+        </p>
         <div className="grid sm:grid-cols-2 gap-4 mb-12">
           {consultations.map((c) => (
             <div
@@ -134,7 +131,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
                     {c.prix}
                   </span>
                 </div>
-                <p className="text-[10px] text-muted-foreground/70 mb-2">{c.prixLabel}</p>
+                
                 <div className="flex items-center gap-1 text-xs text-muted-foreground mb-2">
                   <Clock className="w-3.5 h-3.5" />
                   {c.duree}
@@ -183,7 +180,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
                 <p className="text-3xl font-bold text-primary tabular-nums mb-1">
                   {f.prix}
                 </p>
-                <p className="text-[10px] text-muted-foreground/70 mb-2">{f.prixLabel}</p>
+                
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {f.detail}
                 </p>
@@ -206,7 +203,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
             La partie médicale remboursable par la CPAM n'est pas incluse dans le forfait.
           </p>
           <p>
-            Le patient doit impérativement se munir de sa <strong className="text-foreground">carte vitale</strong> pour chaque séance.
+            Le patient doit se munir de sa <strong className="text-foreground">carte vitale</strong> pour chaque séance.
           </p>
         </div>
 
