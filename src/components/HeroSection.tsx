@@ -15,7 +15,7 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
               <span className="text-sage">Zanardo</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed whitespace-pre-line">
-              Médecin Nutritionniste à Tours{"\n"}Une approche de Médecine Intégrative : un accompagnement médical personnalisé, global et scientifique pour retrouver votre équilibre alimentaire et améliorer durablement votre santé.
+              Un accompagnement médical bienveillant et personnalisé pour optimiser votre santé et accéder à un équilibre alimentaire adéquat qui s’inscrit dans la durée.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
               <Button variant="cta" size="lg" onClick={onBookClick}>
