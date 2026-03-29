@@ -73,18 +73,8 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
               <h3 className="font-semibold text-foreground">Consultations</h3>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Les consultations en Nutrition mêlent médecine classique et
-              spécialité nutritionnelle. La prise en charge commence par un bilan
-              nutritionnel complet, une analyse de vos habitudes de vie et la
-              co-construction d'un programme personnalisé adapté à vos objectifs
-              santé.
+              Les consultations en médecine nutritionnelle mêlent consultation de médecine générale et consultation spécialisée en Nutrition. La prise en charge débute par un bilan médical et nutritionnel, ainsi que le recueil de vos habitudes de vie et événements marquants. Il se poursuit avec des exercices de mise en situation afin d'identifier les comportements inadaptés ou perfectibles, un changement d'habitudes minimal et un éventuel bilan biologique complémentaire. Ceci nous permet de co-construire un programme personnalisé adapté à vos objectifs de santé.
             </p>
-            <ul className="text-xs text-muted-foreground space-y-1 list-disc list-inside">
-              <li>Nutrition – MicroNutrition – Prévention</li>
-              <li>Suivi médical de perte de poids</li>
-              <li>Troubles du comportement alimentaire</li>
-              <li>Troubles fonctionnels</li>
-            </ul>
           </div>
 
           {/* Remboursement */}
@@ -96,16 +86,16 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
               <h3 className="font-semibold text-foreground">Remboursement</h3>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              La <strong className="text-foreground">partie médicale</strong> est
-              prise en charge par la CPAM (consultation médecine générale : 30 €,
-              ou 35 € avec courrier du médecin traitant).
+              La consultation de Nutrition est une consultation à 2 niveaux :
             </p>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              La <strong className="text-foreground">partie Nutrition</strong>{" "}
-              (Acte Hors Nomenclature) peut être remboursée par votre mutuelle
-              selon votre contrat. Un reçu vous est remis à l'issue de chaque
-              consultation.
-            </p>
+            <ul className="text-sm text-muted-foreground leading-relaxed space-y-2 list-disc list-inside">
+              <li>
+                La <strong className="text-foreground">partie médicale</strong>, basée sur la consultation classique de médecine générale. Le tarif est de 30 € (ou 35 € avec un courrier de médecin), et est remboursé par votre caisse de maladie.
+              </li>
+              <li>
+                La <strong className="text-foreground">part « Nutrition »</strong> est un Acte Hors Nomenclature (non répertorié et donc non remboursé par la Caisse de Maladie), pouvant être pris en charge par votre mutuelle en fonction de votre contrat. Un reçu vous est remis à chaque consultation. Le tarif est fonction de la complexité de la consultation et du temps passé.
+              </li>
+            </ul>
           </div>
         </div>
 

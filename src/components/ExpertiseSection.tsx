@@ -1,29 +1,23 @@
-import { Apple, HeartPulse, Dumbbell, Microscope } from "lucide-react";
+import { Apple, HeartPulse, Microscope } from "lucide-react";
 
 const expertises = [
   {
     icon: Apple,
-    title: "Rééquilibrage Alimentaire",
+    title: "Rééquilibrage Alimentaire & Optimisation de la Santé",
     description:
-      "Un programme alimentaire sur mesure adapté à votre mode de vie, vos goûts et vos objectifs de santé pour retrouver un poids de forme durable.",
+      "Programme alimentaire sur mesure jusqu'à un poids de forme durable. Optimisation de l'alimentation pour la performance sportive et la récupération. Bilans de Prévention - Santé.",
   },
   {
     icon: HeartPulse,
-    title: "Pathologies & Nutrition Thérapeutique",
+    title: "Pathologies & Nutrition",
     description:
-      "Prise en charge nutritionnelle des pathologies chroniques : diabète, cholestérol, maladies cardiovasculaires, troubles métaboliques.",
-  },
-  {
-    icon: Dumbbell,
-    title: "Nutrition Sportive",
-    description:
-      "Optimisation de l'alimentation pour la performance sportive et la récupération.",
+      "Prise en charge nutritionnelle et micronutritionnelle des Maladies Nutritionnelles et Métaboliques (Diabète, InsulinoRésistance, Surpoids, Obésité…) et autres pathologies chroniques.",
   },
   {
     icon: Microscope,
     title: "Médecine Fonctionnelle",
     description:
-      "Optimiser le fonctionnement des systèmes biologiques du corps grâce à une approche scientifique et personnalisée : bilans approfondis, micronutrition et prévention active.",
+      "Étude approfondie des symptômes présentés et recherche de leur cause fonctionnelle, parfois à l'aide de bilans spécialisés. La Médecine Fonctionnelle aborde l'individu dans son intégralité biologique, physique et mentale.",
   },
 ];
 
@@ -35,7 +29,7 @@ const ExpertiseSection = () => {
           <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Nos spécialités</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Domaines d'Expertise</h2>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {expertises.map((e) => (
             <div
               key={e.title}
