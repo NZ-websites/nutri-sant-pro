@@ -23,7 +23,7 @@ const SiteHeader = ({ onBookClick }: { onBookClick: () => void }) => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-card/95 backdrop-blur-md shadow-sm" : "bg-black/20 backdrop-blur-sm"
+        scrolled ? "bg-card/95 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
@@ -36,7 +36,7 @@ const SiteHeader = ({ onBookClick }: { onBookClick: () => void }) => {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-white/80 hover:text-white transition-colors drop-shadow-sm"
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
             >
               {l.label}
             </a>
@@ -46,7 +46,7 @@ const SiteHeader = ({ onBookClick }: { onBookClick: () => void }) => {
           </Button>
         </nav>
 
-        <button className="md:hidden text-white" onClick={() => setMobileOpen(!mobileOpen)}>
+        <button className="md:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
