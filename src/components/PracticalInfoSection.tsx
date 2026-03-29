@@ -17,8 +17,8 @@ const infos = [
     icon: Clock,
     title: "Horaires d'ouverture",
     items: [
-      "Lundi – Vendredi : 9h00 – 19h00",
-      "Samedi : 9h00 – 13h00",
+      "Lundi – Vendredi : 8h00 – 20h00",
+      "Samedi : 8h00 – 12h00",
       "Dimanche : Fermé",
     ],
   },
@@ -28,7 +28,7 @@ const infos = [
     items: [],
     contacts: [
       { icon: Phone, href: "tel:+33247056247", label: "02 47 05 62 47" },
-      { icon: Mail, href: "mailto:dr.x.zanardo@gmail.com", label: "dr.x.zanardo@gmail.com" },
+      
     ],
   },
 ];

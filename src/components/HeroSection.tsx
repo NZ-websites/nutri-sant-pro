@@ -11,7 +11,7 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
               Médecin Nutritionniste
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Dr. Xénia{" "}
+              Dr Xénia{" "}
               <span className="text-primary">Zanardo</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed whitespace-pre-line">
