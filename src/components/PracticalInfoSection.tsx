@@ -9,7 +9,7 @@ const infos = [
       "37000 Tours",
     ],
     link: {
-      href: "https://www.google.com/maps/search/?api=1&query=30+Bd+Heurteloup+37000+Tours",
+      href: "https://share.google/gkFq7bp8vxaBthQwq",
       label: "Voir sur Google Maps →",
     },
   },
