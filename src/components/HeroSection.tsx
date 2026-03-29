@@ -31,13 +31,11 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
             </div>
           </div>
           <div className="relative flex justify-center md:justify-end">
-            <div className="relative w-60 md:w-72 rounded-2xl overflow-hidden shadow-2xl ring-1 ring-border">
+            <div className="relative w-60 md:w-72 aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-border">
               <img
                 src={doctorImg}
                 alt="Dr Xénia Zanardo — Médecin Nutritionniste à Tours"
-                width={800}
-                height={1024}
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             <div className="absolute -bottom-4 -left-4 bg-card rounded-xl p-4 shadow-lg border border-border">
