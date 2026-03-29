@@ -1,17 +1,29 @@
 import { GraduationCap, Award, BookOpen, Brain, Globe } from "lucide-react";
 
-const formations = [
+const principaux = [
   { icon: GraduationCap, text: "Diplôme d'État de Docteur en Médecine\nFaculté de Médecine de Nancy" },
   { icon: Award, text: "Diplôme d'Études Spécialisées Complémentaires (DES) en Nutrition\nFaculté de Médecine de Rennes" },
   { icon: Award, text: "Diplôme Inter-Universitaire Européen MAPS\n(Micronutrition Alimentation Prévention Santé)" },
+];
+
+const autres = [
   { icon: BookOpen, text: "DU de Diététique et Hygiène Alimentaire\nFaculté de Médecine de Tours (2006)" },
   { icon: BookOpen, text: "DU de Diabétologie Pratique\nFaculté de Médecine de Tours (2005)" },
   { icon: BookOpen, text: "Nutrition Humaine et Diététique Thérapeutique\nFaculté de Médecine de Nancy (1998-1999)" },
-  { icon: BookOpen, text: "Certificat de Bases Conceptuelles de la Nutrition Humaine\nFaculté de Médecine de Nancy 1996)" },
+  { icon: BookOpen, text: "Certificat de Bases Conceptuelles de la Nutrition Humaine\nFaculté de Médecine de Nancy (1996)" },
   { icon: Brain, text: "Formation Initiale en Thérapies Cognitives et Comportementales\nAFTCC (2015-2016)" },
   { icon: Globe, text: "DIU de Santé de l'Enfant\nNancy, Strasbourg, Besançon" },
   { icon: Globe, text: "DU de Médecine Tropicale\nFaculté de Médecine de Nancy (1993)" },
 ];
+
+const DiplomeItem = ({ item }: { item: { icon: any; text: string } }) => (
+  <div className="flex items-center gap-3">
+    <div className="w-8 h-8 rounded-md bg-sage-light flex items-center justify-center shrink-0">
+      <item.icon className="w-4 h-4 text-sage" />
+    </div>
+    <p className="text-sm text-foreground leading-relaxed whitespace-pre-line">{item.text}</p>
+  </div>
+);
 
 const CabinetSection = () => {
   return (
@@ -28,13 +40,14 @@ const CabinetSection = () => {
           <div className="bg-card rounded-2xl border border-border p-8">
             <h3 className="text-lg font-semibold text-foreground mb-6">Formation & Diplômes</h3>
             <div className="space-y-4">
-              {formations.map((item) => (
-                <div key={item.text} className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-md bg-sage-light flex items-center justify-center shrink-0">
-                    <item.icon className="w-4 h-4 text-sage" />
-                  </div>
-                  <p className="text-sm text-foreground leading-relaxed whitespace-pre-line">{item.text}</p>
-                </div>
+              {principaux.map((item) => (
+                <DiplomeItem key={item.text} item={item} />
+              ))}
+            </div>
+            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mt-6 mb-4">Autres diplômes et formations</p>
+            <div className="space-y-4">
+              {autres.map((item) => (
+                <DiplomeItem key={item.text} item={item} />
               ))}
             </div>
           </div>
