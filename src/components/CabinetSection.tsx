@@ -6,7 +6,7 @@ const formations = [
   { icon: BookOpen, text: "DU de Diététique et Hygiène Alimentaire\nFaculté de Médecine de Tours (2006)" },
   { icon: BookOpen, text: "DU de Diabétologie Pratique\nFaculté de Médecine de Tours (2005)" },
   { icon: BookOpen, text: "Nutrition Humaine et Diététique Thérapeutique\nFaculté de Médecine de Nancy (1998-1999)" },
-  { icon: BookOpen, text: "Certificat de Bases Conceptuelles de la Nutrition Humaine\n\nFaculté de Médecine de Nancy 1996)" },
+  { icon: BookOpen, text: "Certificat de Bases Conceptuelles de la Nutrition Humaine\nFaculté de Médecine de Nancy 1996)" },
   { icon: Brain, text: "Formation Initiale en Thérapies Cognitives et Comportementales\nAFTCC (2015-2016)" },
   { icon: Globe, text: "DIU de Santé de l'Enfant\nNancy, Strasbourg, Besançon" },
   { icon: Globe, text: "DU de Médecine Tropicale\nFaculté de Médecine de Nancy (1993)" },
