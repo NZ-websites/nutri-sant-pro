@@ -1,9 +1,9 @@
 import { GraduationCap, Award, BookOpen, Brain, Globe } from "lucide-react";
 
 const principaux = [
-  { icon: GraduationCap, text: "Diplôme d'État de Docteur en Médecine\nFaculté de Médecine de Nancy" },
+  { icon: GraduationCap, text: "Diplôme d'État de Docteur en Médecine\nFaculté de Médecine de Nancy\n(Thèse: Dutch Eating Behavior Questionnaire et Obésité - Etude de 340 patients)" },
   { icon: Award, text: "Diplôme d'Études Spécialisées Complémentaires (DES) en Nutrition\nFaculté de Médecine de Rennes" },
-  { icon: Award, text: "Diplôme Inter-Universitaire Européen MAPS\n(Micronutrition Alimentation Prévention Santé)" },
+  { icon: Award, text: "Diplôme Inter-Universitaire Européen MAPS\n(Micronutrition Alimentation Prévention Santé)\nFacultés de Médecine de Paris-Descartes (F) et de Valladolid (E)" },
 ];
 
 const autres = [
@@ -31,9 +31,9 @@ const CabinetSection = () => {
       <div className="container">
         <div className="text-center mb-14">
           <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Parcours</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Xénia ZANARDO</h2>
-          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
-            Médecin Nutritionniste à Tours, le Dr Zanardo propose une approche de Médecine Intégrative, s'appuyant sur une formation riche et pluridisciplinaire en nutrition, métabolisme et santé.
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Dr Xénia ZANARDO</h2>
+          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto font-sans">
+            Le Dr Zanardo propose des consultations de médecine nutritionnelle avec une approche intégrative, s’appuyant sur une formation riche et pluridisciplinaire en nutrition, métabolisme et santé.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-16 items-start">
