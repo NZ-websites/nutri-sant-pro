@@ -1,29 +1,12 @@
 import { GraduationCap, Award, BookOpen, Brain, Globe } from "lucide-react";
 
 const principaux = [
-  { icon: GraduationCap, text: "Diplôme d'État de Docteur en Médecine\nFaculté de Médecine de Nancy" },
+  { icon: GraduationCap, text: "Diplôme d'État de Docteur en Médecine\nFaculté de Médecine de Nancy\n(Thèse: Dutch Eating Behavior Questionnaire et Obésité - Etude de 340 patients)" },
   { icon: Award, text: "Diplôme d'Études Spécialisées Complémentaires (DES) en Nutrition\nFaculté de Médecine de Rennes" },
-  { icon: Award, text: "Diplôme Inter-Universitaire Européen MAPS\n(Micronutrition Alimentation Prévention Santé)" },
+  { icon: Award, text: "Diplôme Inter-Universitaire Européen MAPS\n(Micronutrition Alimentation Prévention Santé)\nFacultés de Médecine de Paris-Descartes (F) et de Valladolid (E)" },
 ];
 
-const autres = [
-  { icon: BookOpen, text: "DU de Diététique et Hygiène Alimentaire\nFaculté de Médecine de Tours (2006)" },
-  { icon: BookOpen, text: "DU de Diabétologie Pratique\nFaculté de Médecine de Tours (2005)" },
-  { icon: BookOpen, text: "Nutrition Humaine et Diététique Thérapeutique\nFaculté de Médecine de Nancy (1998-1999)" },
-  { icon: BookOpen, text: "Certificat de Bases Conceptuelles de la Nutrition Humaine\nFaculté de Médecine de Nancy (1996)" },
-  { icon: Brain, text: "Formation Initiale en Thérapies Cognitives et Comportementales\nAFTCC (2015-2016)" },
-  { icon: Globe, text: "DIU de Santé de l'Enfant\nNancy, Strasbourg, Besançon" },
-  { icon: Globe, text: "DU de Médecine Tropicale\nFaculté de Médecine de Nancy (1993)" },
-];
-
-const DiplomeItem = ({ item }: { item: { icon: any; text: string } }) => (
-  <div className="flex items-center gap-3">
-    <div className="w-8 h-8 rounded-md bg-sage-light flex items-center justify-center shrink-0">
-      <item.icon className="w-4 h-4 text-sage" />
-    </div>
-    <p className="text-sm text-foreground leading-relaxed whitespace-pre-line">{item.text}</p>
-  </div>
-);
+// ... keep existing code
 
 const CabinetSection = () => {
   return (
@@ -31,9 +14,9 @@ const CabinetSection = () => {
       <div className="container">
         <div className="text-center mb-14">
           <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Parcours</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Xénia ZANARDO</h2>
-          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
-            Médecin Nutritionniste à Tours, le Dr Zanardo propose une approche de Médecine Intégrative, s'appuyant sur une formation riche et pluridisciplinaire en nutrition, métabolisme et santé.
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Dr Xénia ZANARDO</h2>
+          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto font-sans">
+            Le Dr Zanardo propose des consultations de médecine nutritionnelle avec une approche intégrative, s’appuyant sur une formation riche et pluridisciplinaire en nutrition, métabolisme et santé.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-16 items-start">
