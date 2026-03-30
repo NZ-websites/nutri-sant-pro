@@ -36,13 +36,13 @@ const consultations = [
 const forfaits = [
   {
     titre: "Forfait 4 mois",
-    prix: "160 €",
+    prix: "180 €",
     detail: "Quel que soit le nombre de consultations sur cette période.",
     recommended: true,
   },
   {
     titre: "Forfait 6 mois",
-    prix: "220 €",
+    prix: "240 €",
     detail: "Quel que soit le nombre de consultations sur cette période.",
     recommended: false,
   },
@@ -93,7 +93,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
                 La <strong className="text-foreground">partie médicale</strong>, basée sur la consultation classique de médecine générale. Le tarif est de 30 € (ou 35 € avec un courrier de médecin), et est remboursé par votre caisse de maladie.
               </li>
               <li>
-                La <strong className="text-foreground">part « Nutrition »</strong> est un Acte Hors Nomenclature (non répertorié et donc non remboursé par la Caisse de Maladie), pouvant être pris en charge par votre mutuelle en fonction de votre contrat. Un reçu vous est remis à chaque consultation. Le tarif est fonction de la complexité de la consultation et du temps passé.
+                La <strong className="text-foreground">part « Nutrition »</strong> est un Acte Hors Nomenclature (non répertorié et donc non remboursé par la Caisse de Maladie), pouvant être pris en charge par votre mutuelle en fonction de votre contrat. Un reçu vous est remis à cet effet à l'issue de chaque consultation (ou à la fin du forfait). Le tarif est fonction de la complexité de la consultation et du temps passé.
               </li>
             </ul>
           </div>
