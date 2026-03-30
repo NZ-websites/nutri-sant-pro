@@ -14,8 +14,11 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
               Dr Xénia{" "}
               <span className="text-sage">Zanardo</span>
             </h1>
-            <p className="text-lg text-muted-foreground max-w-lg leading-relaxed whitespace-pre-line">
-              Un accompagnement médical bienveillant et personnalisé pour optimiser votre santé et accéder à un équilibre alimentaire adéquat qui s’inscrit dans la durée.
+            <p className="text-muted-foreground max-w-lg leading-relaxed whitespace-pre-line text-base font-normal">
+              Nutrition – MicroNutrition – Prévention{"\n"}
+              Suivi médical de perte de poids{"\n"}
+              Troubles du comportement alimentaire{"\n"}
+              Troubles fonctionnels
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
               <Button variant="cta" size="lg" onClick={onBookClick}>
