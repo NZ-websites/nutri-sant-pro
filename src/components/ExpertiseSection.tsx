@@ -5,7 +5,7 @@ const expertises = [
     icon: Apple,
     title: "Rééquilibrage Alimentaire & Optimisation de la Santé",
     description:
-      "Programme alimentaire sur mesure jusqu'à un poids de forme durable. Optimisation de l'alimentation pour la performance sportive et la récupération. Bilans de Prévention - Santé.",
+      "Un programme alimentaire sur-mesure adapté à votre mode de vie, vos goûts, vos objectifs de santé pour retrouver un poids de forme durable. Optimisation de l’alimentation pour la performance sportive et la récupération. Optimisation de vos habitudes nutritionnelles et globales avec un objectif de prévention Santé.",
   },
   {
     icon: HeartPulse,
@@ -26,7 +26,7 @@ const ExpertiseSection = () => {
     <section id="expertise" className="py-20 bg-secondary/40">
       <div className="container">
         <div className="text-center mb-14">
-          <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Nos spécialités</p>
+          <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2 font-sans">{"\n"}</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Domaines d'Expertise</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
