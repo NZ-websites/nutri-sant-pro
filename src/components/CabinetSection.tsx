@@ -59,19 +59,6 @@ const CabinetSection = () => {
                 et vos objectifs pour construire avec vous un plan nutritionnel réaliste et durable et vous aider à faire évoluer vos habitudes pour atteindre vos objectifs grâce à une médecine personnalisée et participative.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { value: "25+", label: "Années d'expérience" },
-                { value: "9", label: "Diplômes & formations" },
-                { value: "100%", label: "Personnalisé" },
-                { value: "Secteur 1", label: "Conventionné" },
-              ].map((s) => (
-                <div key={s.label} className="text-center p-5 rounded-xl bg-card border border-border">
-                  <p className="text-2xl font-bold text-primary tabular-nums">{s.value}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{s.label}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>
