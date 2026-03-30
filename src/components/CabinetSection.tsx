@@ -6,7 +6,24 @@ const principaux = [
   { icon: Award, text: "Diplôme Inter-Universitaire Européen MAPS\n(Micronutrition Alimentation Prévention Santé)\nFacultés de Médecine de Paris-Descartes (F) et de Valladolid (E)" },
 ];
 
-// ... keep existing code
+const autres = [
+  { icon: BookOpen, text: "DU de Diététique et Hygiène Alimentaire\nFaculté de Médecine de Tours (2006)" },
+  { icon: BookOpen, text: "DU de Diabétologie Pratique\nFaculté de Médecine de Tours (2005)" },
+  { icon: BookOpen, text: "Nutrition Humaine et Diététique Thérapeutique\nFaculté de Médecine de Nancy (1998-1999)" },
+  { icon: BookOpen, text: "Certificat de Bases Conceptuelles de la Nutrition Humaine\nFaculté de Médecine de Nancy (1996)" },
+  { icon: Brain, text: "Formation Initiale en Thérapies Cognitives et Comportementales\nAFTCC (2015-2016)" },
+  { icon: Globe, text: "DIU de Santé de l'Enfant\nNancy, Strasbourg, Besançon" },
+  { icon: Globe, text: "DU de Médecine Tropicale\nFaculté de Médecine de Nancy (1993)" },
+];
+
+const DiplomeItem = ({ item }: { item: { icon: any; text: string } }) => (
+  <div className="flex items-center gap-3">
+    <div className="w-8 h-8 rounded-md bg-sage-light flex items-center justify-center shrink-0">
+      <item.icon className="w-4 h-4 text-sage" />
+    </div>
+    <p className="text-sm text-foreground leading-relaxed whitespace-pre-line">{item.text}</p>
+  </div>
+);
 
 const CabinetSection = () => {
   return (
