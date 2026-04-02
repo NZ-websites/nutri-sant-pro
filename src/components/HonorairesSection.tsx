@@ -74,7 +74,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
               </div>
               <h3 className="font-semibold text-foreground">Consultations</h3>
             </div>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <p className="text-sm text-muted-foreground leading-relaxed text-justify">
               Les consultations en médecine nutritionnelle mêlent consultation de médecine générale et consultation spécialisée en Nutrition. La prise en charge débute par un bilan médical et nutritionnel, ainsi que le recueil de vos habitudes de vie et événements marquants. Il se poursuit avec des exercices de mise en situation chez vous afin d'identifier les comportements inadaptés ou perfectibles, un changement d'habitudes minimal et un éventuel bilan biologique complémentaire. Ceci nous permet de co-construire un programme personnalisé adapté à vos objectifs de santé.
             </p>
           </div>
