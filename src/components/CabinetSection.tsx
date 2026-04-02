@@ -1,6 +1,6 @@
-import { GraduationCap, Award, BookOpen, Brain, Globe } from "lucide-react";
+import { GraduationCap, Award, BookOpen, Brain, Globe, ChevronDown, ChevronUp } from "lucide-react";
 import TestimonialsSection from "./TestimonialsSection";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import { useScrollReveal, revealClass } from "@/hooks/useScrollReveal";
 
 interface DiplomeData {
@@ -119,6 +119,7 @@ const CabinetSection = () => {
   const [titleRef, titleVisible] = useScrollReveal<HTMLDivElement>();
   const [leftRef, leftVisible] = useScrollReveal<HTMLDivElement>();
   const [rightRef, rightVisible] = useScrollReveal<HTMLDivElement>();
+  const [showAutres, setShowAutres] = useState(false);
 
   return (
     <section id="parcours" className="py-20">
@@ -138,11 +139,27 @@ const CabinetSection = () => {
                 <DiplomeItem key={i} item={item} />
               ))}
             </div>
-            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mt-6 mb-4">Autres diplômes et formations</p>
-            <div className="space-y-4">
-              {autres.map((item, i) => (
-                <DiplomeItem key={i} item={item} />
-              ))}
+
+            {/* Bouton toggle pour les autres diplômes */}
+            <button
+              onClick={() => setShowAutres(!showAutres)}
+              className="flex items-center gap-1.5 mt-6 text-xs font-semibold text-sage uppercase tracking-wide hover:text-sage/80 transition-colors"
+            >
+              Autres diplômes et formations
+              {showAutres ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+            </button>
+
+            {/* Liste dépliable avec animation */}
+            <div
+              className={`overflow-hidden transition-all duration-500 ease-out ${
+                showAutres ? "max-h-[600px] opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"
+              }`}
+            >
+              <div className="space-y-4">
+                {autres.map((item, i) => (
+                  <DiplomeItem key={i} item={item} />
+                ))}
+              </div>
             </div>
           </div>
           <div ref={rightRef} className={`space-y-8 ${revealClass(rightVisible, "right")}`} style={{ transitionDelay: "150ms" }}>
