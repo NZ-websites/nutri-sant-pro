@@ -1,6 +1,6 @@
-import { GraduationCap, Award, BookOpen, Brain, Globe } from "lucide-react";
+import { GraduationCap, Award, BookOpen, Brain, Globe, ChevronDown, ChevronUp } from "lucide-react";
 import TestimonialsSection from "./TestimonialsSection";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import { useScrollReveal, revealClass } from "@/hooks/useScrollReveal";
 
 interface DiplomeData {
