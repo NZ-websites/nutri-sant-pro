@@ -10,9 +10,9 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
       <div className="container relative">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <div className={`inline-block px-3 py-1 rounded-full bg-sage/10 text-sage text-xs font-semibold tracking-wide uppercase border border-sage/20 ${revealClass(visible, "up")}`}>
+            <p className={`text-sm font-semibold text-sage uppercase tracking-wide ${revealClass(visible, "up")}`}>
               Médecin Nutritionniste
-            </div>
+            </p>
             <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight ${revealClass(visible, "up")} delay-100`}>
               Dr Xénia{" "}
               <span className="text-primary">Zanardo</span>

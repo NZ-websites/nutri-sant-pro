@@ -57,9 +57,6 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
       <div className="container max-w-5xl">
         {/* Titre */}
         <div ref={titleRef} className={`text-center mb-14 ${revealClass(titleVisible, "up")}`}>
-          <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">
-            Tarifs & Parcours de soins
-          </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
             Honoraires & Remboursements
           </h2>
