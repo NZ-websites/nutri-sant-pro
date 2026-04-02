@@ -80,7 +80,7 @@ const autres: DiplomeData[] = [
     content: (
       <>
         Formation Initiale en Thérapies Cognitives et Comportementales
-        {"\n"}AFTCC (2015-2016)
+        {"\n"}<em>AFTCC</em> (2015-2016)
       </>
     ),
   },
