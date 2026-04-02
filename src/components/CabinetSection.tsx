@@ -89,7 +89,7 @@ const autres: DiplomeData[] = [
     content: (
       <>
         DIU de Santé de l'Enfant
-        {"\n"}Nancy, Strasbourg, Besançon
+        {"\n"}<em>Nancy, Strasbourg, Besançon</em>
       </>
     ),
   },
