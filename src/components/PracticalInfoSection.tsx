@@ -86,6 +86,34 @@ const PracticalInfoSection = () => {
             </div>
           ))}
         </div>
+
+        {/* Carte épurée */}
+        <div className="mt-12 rounded-xl overflow-hidden border border-border shadow-sm">
+          <iframe
+            title="Localisation du cabinet Dr Zanardo – 30 Boulevard Heurteloup, Tours"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=0.6830%2C47.3880%2C0.6970%2C47.3960&layer=mapnik&marker=47.3920%2C0.6900"
+            width="100%"
+            height="320"
+            className="w-full"
+            style={{ border: 0 }}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+          <div className="bg-card px-5 py-3 flex items-center justify-between">
+            <p className="text-sm text-muted-foreground">
+              <MapPin className="inline w-4 h-4 mr-1 -mt-0.5 text-primary" />
+              30 Bd Heurteloup, 37000 Tours
+            </p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Docteur+Xenia+Zanardo+30+Boulevard+Heurteloup+37000+Tours"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-primary hover:underline"
+            >
+              Itinéraire →
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
