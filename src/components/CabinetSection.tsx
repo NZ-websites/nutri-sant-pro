@@ -1,6 +1,7 @@
 import { GraduationCap, Award, BookOpen, Brain, Globe } from "lucide-react";
 import TestimonialsSection from "./TestimonialsSection";
 import { ReactNode } from "react";
+import { useScrollReveal, revealClass } from "@/hooks/useScrollReveal";
 
 interface DiplomeData {
   icon: any;
@@ -115,10 +116,14 @@ const DiplomeItem = ({ item }: { item: DiplomeData }) => (
 );
 
 const CabinetSection = () => {
+  const [titleRef, titleVisible] = useScrollReveal<HTMLDivElement>();
+  const [leftRef, leftVisible] = useScrollReveal<HTMLDivElement>();
+  const [rightRef, rightVisible] = useScrollReveal<HTMLDivElement>();
+
   return (
     <section id="parcours" className="py-20">
       <div className="container">
-        <div className="text-center mb-14">
+        <div ref={titleRef} className={`text-center mb-14 ${revealClass(titleVisible, "up")}`}>
           <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Parcours</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Dr Xénia ZANARDO</h2>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto font-sans">
@@ -126,7 +131,7 @@ const CabinetSection = () => {
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div className="bg-card rounded-2xl border border-border p-8">
+          <div ref={leftRef} className={`bg-card rounded-2xl border border-border p-8 ${revealClass(leftVisible, "left")}`}>
             <h3 className="text-lg font-semibold text-foreground mb-6">Formation & Diplômes</h3>
             <div className="space-y-4">
               {principaux.map((item, i) => (
@@ -140,7 +145,7 @@ const CabinetSection = () => {
               ))}
             </div>
           </div>
-          <div className="space-y-8">
+          <div ref={rightRef} className={`space-y-8 ${revealClass(rightVisible, "right")}`} style={{ transitionDelay: "150ms" }}>
             <div className="bg-card rounded-2xl border border-border p-8">
               <h3 className="text-lg font-semibold text-foreground mb-4">Une approche globale</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">

@@ -1,16 +1,20 @@
 import { Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useScrollReveal, revealClass } from "@/hooks/useScrollReveal";
 
 const ContactSection = () => {
+  const [titleRef, titleVisible] = useScrollReveal<HTMLDivElement>();
+  const [cardsRef, cardsVisible] = useScrollReveal<HTMLDivElement>();
+
   return (
     <section id="contact" className="py-20">
       <div className="container max-w-3xl">
-        <div className="text-center mb-14">
+        <div ref={titleRef} className={`text-center mb-14 ${revealClass(titleVisible, "up")}`}>
           <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Contact</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Nous Contacter</h2>
         </div>
-        <div className="grid sm:grid-cols-2 gap-6">
-          <div className="rounded-xl border border-border bg-card p-8 text-center space-y-4">
+        <div ref={cardsRef} className="grid sm:grid-cols-2 gap-6">
+          <div className={`rounded-xl border border-border bg-card p-8 text-center space-y-4 ${revealClass(cardsVisible, "left")}`}>
             <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
               <Phone className="w-6 h-6 text-primary" />
             </div>
@@ -19,7 +23,7 @@ const ContactSection = () => {
               <a href="tel:+33247056247">02 47 05 62 47</a>
             </Button>
           </div>
-          <div className="rounded-xl border border-border bg-card p-8 text-center space-y-4">
+          <div className={`rounded-xl border border-border bg-card p-8 text-center space-y-4 ${revealClass(cardsVisible, "right")}`} style={{ transitionDelay: "150ms" }}>
             <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
               <MapPin className="w-6 h-6 text-primary" />
             </div>

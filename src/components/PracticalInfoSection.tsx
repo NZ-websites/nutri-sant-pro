@@ -1,4 +1,5 @@
-import { Clock, MapPin, Phone, Mail } from "lucide-react";
+import { Clock, MapPin, Phone } from "lucide-react";
+import { useScrollReveal, revealClass } from "@/hooks/useScrollReveal";
 
 const infos = [
   {
@@ -29,24 +30,28 @@ const infos = [
     items: [],
     contacts: [
       { icon: Phone, href: "tel:+33247056247", label: "02 47 05 62 47" },
-      
     ],
   },
 ];
 
 const PracticalInfoSection = () => {
+  const [titleRef, titleVisible] = useScrollReveal<HTMLDivElement>();
+  const [gridRef, gridVisible] = useScrollReveal<HTMLDivElement>();
+  const [mapRef, mapVisible] = useScrollReveal<HTMLDivElement>();
+
   return (
     <section id="infos" className="py-20">
       <div className="container">
-        <div className="text-center mb-14">
+        <div ref={titleRef} className={`text-center mb-14 ${revealClass(titleVisible, "up")}`}>
           <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Pratique</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Informations Pratiques</h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
-          {infos.map((info) => (
+        <div ref={gridRef} className="grid md:grid-cols-3 gap-8">
+          {infos.map((info, i) => (
             <div
               key={info.title}
-              className="p-8 rounded-xl border border-border bg-card"
+              className={`p-8 rounded-xl border border-border bg-card ${revealClass(gridVisible, "up")}`}
+              style={{ transitionDelay: `${i * 150}ms` }}
             >
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
                 <info.icon className="w-6 h-6 text-primary" />
@@ -87,8 +92,8 @@ const PracticalInfoSection = () => {
           ))}
         </div>
 
-        {/* Carte épurée */}
-        <div className="mt-12 rounded-xl overflow-hidden border border-border shadow-sm">
+        {/* Carte */}
+        <div ref={mapRef} className={`mt-12 rounded-xl overflow-hidden border border-border shadow-sm ${revealClass(mapVisible, "scale")}`}>
           <iframe
             title="Localisation du cabinet Dr Zanardo – 30 Boulevard Heurteloup, Tours"
             src="https://www.openstreetmap.org/export/embed.html?bbox=0.6830%2C47.3880%2C0.6970%2C47.3960&layer=mapnik&marker=47.3920%2C0.6900"
