@@ -10,7 +10,7 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
       <div className="container relative">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <p className={`text-sm font-semibold text-sage uppercase tracking-wide ${revealClass(visible, "up")}`}>
+            <p className={`text-sm font-semibold text-primary uppercase tracking-wide ${revealClass(visible, "up")}`}>
               Médecin Nutritionniste
             </p>
             <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight ${revealClass(visible, "up")} delay-100`}>
