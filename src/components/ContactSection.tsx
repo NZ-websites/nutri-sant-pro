@@ -10,7 +10,6 @@ const ContactSection = () => {
     <section id="contact" className="py-20">
       <div className="container max-w-3xl">
         <div ref={titleRef} className={`text-center mb-14 ${revealClass(titleVisible, "up")}`}>
-          <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Contact</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Nous Contacter</h2>
         </div>
         <div ref={cardsRef} className="grid sm:grid-cols-2 gap-6">

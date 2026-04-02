@@ -30,7 +30,6 @@ const ExpertiseSection = () => {
     <section id="expertise" className="py-20 bg-secondary/40">
       <div className="container">
         <div ref={titleRef} className={`text-center mb-14 ${revealClass(titleVisible, "up")}`}>
-          <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2 font-sans">{"\n"}</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Domaines d'Expertise</h2>
         </div>
         <div ref={gridRef} className="grid md:grid-cols-3 gap-8">
