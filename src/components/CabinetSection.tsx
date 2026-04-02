@@ -127,7 +127,7 @@ const CabinetSection = () => {
         <div ref={titleRef} className={`text-center mb-14 ${revealClass(titleVisible, "up")}`}>
           <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2">Parcours</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Dr Xénia ZANARDO</h2>
-          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto font-sans">
+          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto font-sans text-justify">
             Le Dr Zanardo propose des consultations de médecine nutritionnelle avec une approche intégrative, s'appuyant sur une formation riche et pluridisciplinaire en nutrition, métabolisme et santé.
           </p>
         </div>
@@ -165,7 +165,7 @@ const CabinetSection = () => {
           <div ref={rightRef} className={`space-y-8 ${revealClass(rightVisible, "right")}`} style={{ transitionDelay: "150ms" }}>
             <div className="bg-card rounded-2xl border border-border p-8">
               <h3 className="text-lg font-semibold text-foreground mb-4">Une approche globale</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-sm leading-relaxed text-justify">
                 Chaque individu est unique. Le Dr Zanardo prend le temps d'écouter et de comprendre votre histoire
                 et vos objectifs pour construire avec vous un plan nutritionnel réaliste et durable et vous aider à faire évoluer vos habitudes pour atteindre vos objectifs grâce à une médecine personnalisée et participative.
               </p>
