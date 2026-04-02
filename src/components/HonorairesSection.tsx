@@ -193,7 +193,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
             La partie médicale remboursable par la CPAM n'est pas incluse dans le forfait.
           </p>
           <p>
-            Le patient doit se munir de sa <strong className="text-foreground">carte vitale</strong> pour chaque séance.
+            Le patient doit donc se munir de sa <strong className="text-foreground">carte vitale</strong> pour chaque séance.
           </p>
         </div>
 

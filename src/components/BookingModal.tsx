@@ -23,7 +23,7 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
         <div className="space-y-4 pt-2">
           <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900 leading-relaxed">
             La prise de rendez-vous via Doctolib est momentanément indisponible. Merci de contacter
-            impérativement le secrétariat par téléphone pour toute réservation.
+            le secrétariat par téléphone pour toute réservation.
           </div>
           <Button variant="cta" size="lg" className="w-full" asChild>
             <a href="tel:+33247056247">
