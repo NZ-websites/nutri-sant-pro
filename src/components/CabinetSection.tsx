@@ -1,4 +1,5 @@
 import { GraduationCap, Award, BookOpen, Brain, Globe } from "lucide-react";
+import TestimonialsSection from "./TestimonialsSection";
 import { ReactNode } from "react";
 
 interface DiplomeData {
