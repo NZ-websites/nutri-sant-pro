@@ -89,7 +89,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
             <p className="text-sm text-muted-foreground leading-relaxed">
               La consultation de Nutrition est une consultation à 2 niveaux :
             </p>
-            <ul className="text-sm text-muted-foreground leading-relaxed space-y-2 list-disc list-inside">
+            <ul className="text-sm text-muted-foreground leading-relaxed text-justify space-y-2 list-disc list-inside">
               <li>
                 La <strong className="text-foreground">partie médicale</strong>, basée sur la consultation classique de médecine générale. Le tarif est de 30 € (ou 35 € avec un courrier de médecin), et est remboursé par votre caisse de maladie.
               </li>

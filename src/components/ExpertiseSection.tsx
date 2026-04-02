@@ -44,7 +44,7 @@ const ExpertiseSection = () => {
                 <e.icon className="w-6 h-6 text-sage group-hover:text-sage-foreground transition-colors duration-300" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">{e.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{e.description}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed text-justify">{e.description}</p>
             </div>
           ))}
         </div>
