@@ -1,9 +1,12 @@
 import { Phone, MapPin } from "lucide-react";
+import { useScrollReveal, revealClass } from "@/hooks/useScrollReveal";
 
 const SiteFooter = () => {
+  const [ref, visible] = useScrollReveal<HTMLElement>({ threshold: 0.1 });
+
   return (
-    <footer className="py-14 bg-foreground text-primary-foreground">
-      <div className="container">
+    <footer ref={ref} className="py-14 bg-foreground text-primary-foreground">
+      <div className={`container ${revealClass(visible, "up")}`}>
         <div className="grid md:grid-cols-3 gap-10">
           <div>
             <p className="text-lg font-bold mb-3">Dr. Xénia Zanardo</p>

@@ -1,11 +1,12 @@
 import { Apple, HeartPulse, Microscope } from "lucide-react";
+import { useScrollReveal, revealClass } from "@/hooks/useScrollReveal";
 
 const expertises = [
   {
     icon: Apple,
     title: "Rééquilibrage Alimentaire & Optimisation de la Santé",
     description:
-      "Un programme alimentaire sur-mesure adapté à votre mode de vie, vos goûts, vos objectifs de santé pour retrouver un poids de forme durable. Optimisation de l’alimentation pour la performance sportive et la récupération. Optimisation de vos habitudes nutritionnelles et globales avec un objectif de prévention santé.",
+      "Un programme alimentaire sur-mesure adapté à votre mode de vie, vos goûts, vos objectifs de santé pour retrouver un poids de forme durable. Optimisation de l'alimentation pour la performance sportive et la récupération. Optimisation de vos habitudes nutritionnelles et globales avec un objectif de prévention santé.",
   },
   {
     icon: HeartPulse,
@@ -22,18 +23,22 @@ const expertises = [
 ];
 
 const ExpertiseSection = () => {
+  const [titleRef, titleVisible] = useScrollReveal<HTMLDivElement>();
+  const [gridRef, gridVisible] = useScrollReveal<HTMLDivElement>();
+
   return (
     <section id="expertise" className="py-20 bg-secondary/40">
       <div className="container">
-        <div className="text-center mb-14">
+        <div ref={titleRef} className={`text-center mb-14 ${revealClass(titleVisible, "up")}`}>
           <p className="text-sm font-semibold text-sage uppercase tracking-wide mb-2 font-sans">{"\n"}</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Domaines d'Expertise</h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
-          {expertises.map((e) => (
+        <div ref={gridRef} className="grid md:grid-cols-3 gap-8">
+          {expertises.map((e, i) => (
             <div
               key={e.title}
-              className="group p-8 rounded-xl border border-border bg-card hover:shadow-md transition-all duration-300"
+              className={`group p-8 rounded-xl border border-border bg-card hover:shadow-md transition-all duration-300 ${revealClass(gridVisible, "up")} delay-${(i + 1) * 100}`}
+              style={{ transitionDelay: `${i * 150}ms` }}
             >
               <div className="w-12 h-12 rounded-lg bg-sage-light flex items-center justify-center mb-5 group-hover:bg-sage transition-colors duration-300">
                 <e.icon className="w-6 h-6 text-sage group-hover:text-sage-foreground transition-colors duration-300" />
