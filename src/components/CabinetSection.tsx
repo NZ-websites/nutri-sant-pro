@@ -147,6 +147,7 @@ const CabinetSection = () => {
                 Chaque individu est unique. Le Dr Zanardo prend le temps d'écouter et de comprendre votre histoire
                 et vos objectifs pour construire avec vous un plan nutritionnel réaliste et durable et vous aider à faire évoluer vos habitudes pour atteindre vos objectifs grâce à une médecine personnalisée et participative.
               </p>
+              <TestimonialsSection />
             </div>
           </div>
         </div>
