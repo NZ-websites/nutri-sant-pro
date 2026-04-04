@@ -29,7 +29,7 @@ const forfaits = [
     titre: "Forfait 4 mois",
     prix: "180 €",
     detail: "Quel que soit le nombre de consultations sur cette période.",
-    recommended: true,
+    recommended: false,
   },
   {
     titre: "Forfait 6 mois",
