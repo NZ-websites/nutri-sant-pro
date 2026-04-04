@@ -73,7 +73,7 @@ const autres: DiplomeData[] = [
     content: (
       <>
         Certificat de Bases Conceptuelles de la Nutrition Humaine
-        {"\n"}<em>Faculté de Médecine de Nancy</em> (1996)
+        {"\n"}<em>Faculté de Médecine de Nancy</em>
       </>
     ),
   },
