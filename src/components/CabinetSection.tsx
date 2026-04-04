@@ -81,8 +81,8 @@ const autres: DiplomeData[] = [
     icon: Brain,
     content: (
       <>
-        Formation Initiale en Thérapies Cognitives et Comportementales
-        {"\n"}<em>AFTCC</em> (2015-2016)
+        Formation en Thérapies Cognitives et Comportementales
+        {"\n"}(2015-2017)
       </>
     ),
   },
