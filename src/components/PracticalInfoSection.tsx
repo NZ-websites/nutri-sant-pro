@@ -95,7 +95,7 @@ const PracticalInfoSection = () => {
         <div ref={mapRef} className={`mt-12 rounded-xl overflow-hidden border border-border shadow-sm ${revealClass(mapVisible, "scale")}`}>
           <iframe
             title="Localisation du cabinet Dr Zanardo – 30 Boulevard Heurteloup, Tours"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=0.6880%2C47.3885%2C0.6970%2C47.3930&layer=mapnik&marker=47.3907%2C0.6935"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=0.6900%2C47.3905%2C0.6960%2C47.3935&layer=mapnik&marker=47.39195%2C0.69295"
             width="100%"
             height="320"
             className="w-full"

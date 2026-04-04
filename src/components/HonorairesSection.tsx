@@ -12,21 +12,15 @@ const consultations = [
   },
   {
     titre: "Consultation complexe en Nutrition",
-    duree: "50 min",
-    prix: "60 €",
-    description: "Chirurgie bariatrique, optimisation de sa santé globale.",
+    duree: "50 min – 1 h 30",
+    prix: "60 – 120 €",
+    description: "Optimisation de la santé globale, chirurgie bariatrique, médecine fonctionnelle.",
   },
   {
     titre: "Consultation courte de suivi",
     duree: "20 min",
     prix: "33 €",
     description: "Consultations périodiques rapprochées en Nutrition-diététique.",
-  },
-  {
-    titre: "Consultation approfondie",
-    duree: "1 h – 1 h 30",
-    prix: "85 à 125 €",
-    description: "Médecine Fonctionnelle, étude approfondie avec bilans réalisés en laboratoire spécialisé.",
   },
 ];
 
