@@ -55,7 +55,7 @@ const autres: DiplomeData[] = [
     content: (
       <>
         DU de Diabétologie Pratique
-        {"\n"}<em>Faculté de Médecine de Tours</em> (2005)
+        {"\n"}<em>Faculté de Médecine de Tours</em>
       </>
     ),
   },
