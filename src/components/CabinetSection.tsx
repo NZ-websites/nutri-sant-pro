@@ -46,7 +46,7 @@ const autres: DiplomeData[] = [
     content: (
       <>
         DU de Diététique et Hygiène Alimentaire
-        {"\n"}<em>Faculté de Médecine de Tours</em> (2006)
+        {"\n"}<em>Faculté de Médecine de Tours</em>
       </>
     ),
   },
@@ -55,7 +55,7 @@ const autres: DiplomeData[] = [
     content: (
       <>
         DU de Diabétologie Pratique
-        {"\n"}<em>Faculté de Médecine de Tours</em> (2005)
+        {"\n"}<em>Faculté de Médecine de Tours</em>
       </>
     ),
   },
@@ -64,7 +64,7 @@ const autres: DiplomeData[] = [
     content: (
       <>
         Nutrition Humaine et Diététique Thérapeutique
-        {"\n"}<em>Faculté de Médecine de Nancy</em> (1998-1999)
+        {"\n"}<em>Faculté de Médecine de Nancy</em> (1997-1999)
       </>
     ),
   },
@@ -73,7 +73,7 @@ const autres: DiplomeData[] = [
     content: (
       <>
         Certificat de Bases Conceptuelles de la Nutrition Humaine
-        {"\n"}<em>Faculté de Médecine de Nancy</em> (1996)
+        {"\n"}<em>Faculté de Médecine de Nancy</em>
       </>
     ),
   },
@@ -81,8 +81,8 @@ const autres: DiplomeData[] = [
     icon: Brain,
     content: (
       <>
-        Formation Initiale en Thérapies Cognitives et Comportementales
-        {"\n"}<em>AFTCC</em> (2015-2016)
+        Formation en Thérapies Cognitives et Comportementales
+        {"\n"}(2015-2017)
       </>
     ),
   },
@@ -92,6 +92,7 @@ const autres: DiplomeData[] = [
       <>
         DIU de Santé de l'Enfant
         {"\n"}<em>Nancy, Strasbourg, Besançon</em>
+
       </>
     ),
   },
@@ -100,7 +101,7 @@ const autres: DiplomeData[] = [
     content: (
       <>
         DU de Médecine Tropicale
-        {"\n"}<em>Faculté de Médecine de Nancy</em> (1993)
+        {"\n"}<em>Faculté de Médecine de Nancy</em>
       </>
     ),
   },

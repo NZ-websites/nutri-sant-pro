@@ -30,7 +30,7 @@ const SiteFooter = () => {
             <div className="space-y-2 text-sm opacity-70">
               <a href="#accueil" className="block hover:opacity-100 transition-opacity">Accueil</a>
               <a href="#expertise" className="block hover:opacity-100 transition-opacity">Expertise</a>
-              <a href="#contact" className="block hover:opacity-100 transition-opacity">Contact</a>
+              <a href="#infos" className="block hover:opacity-100 transition-opacity">Infos Pratiques</a>
               <p className="pt-2 text-xs opacity-40">© {new Date().getFullYear()} Dr. Xénia Zanardo — Mentions légales</p>
             </div>
           </div>
