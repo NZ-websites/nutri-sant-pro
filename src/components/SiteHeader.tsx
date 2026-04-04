@@ -7,7 +7,7 @@ const navLinks = [
   { label: "Parcours", href: "#parcours" },
   { label: "Tarifs", href: "#tarifs" },
   { label: "Infos Pratiques", href: "#infos" },
-  { label: "Contact", href: "#contact" },
+  
 ];
 
 const SiteHeader = ({ onBookClick }: { onBookClick: () => void }) => {

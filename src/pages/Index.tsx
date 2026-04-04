@@ -20,7 +20,7 @@ const Index = () => {
       <CabinetSection />
       <HonorairesSection onBookClick={() => setBookingOpen(true)} />
       <PracticalInfoSection />
-      <ContactSection />
+      
       <SiteFooter />
       <BookingModal open={bookingOpen} onOpenChange={setBookingOpen} />
     </div>
