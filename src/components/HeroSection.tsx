@@ -40,10 +40,6 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
                 className="w-full h-full object-cover object-center"
               />
             </div>
-            <div className="absolute -bottom-4 -left-4 bg-card rounded-xl p-4 shadow-lg border border-border">
-              <p className="text-sm font-semibold text-primary">Médecin Nutritionniste</p>
-              <p className="text-xs text-muted-foreground">Secteur 1 · Carte Vitale</p>
-            </div>
           </div>
         </div>
       </div>
