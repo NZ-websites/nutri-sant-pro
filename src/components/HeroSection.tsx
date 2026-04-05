@@ -33,7 +33,7 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
             </div>
           </div>
           <div className={`relative flex justify-center md:justify-end ${revealClass(visible, "right")} delay-200`}>
-            <div className="relative w-64 md:w-80 aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-border">
+            <div className="relative w-64 md:w-80 aspect-square rounded-full overflow-hidden shadow-2xl ring-1 ring-border">
               <img
                 src={doctorImg}
                 alt="Dr Xénia Zanardo — Médecin Nutritionniste à Tours"
