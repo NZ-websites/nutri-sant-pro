@@ -112,7 +112,7 @@ const autresFormations: DiplomeData[] = [
     content: (
       <>
         Cycle de Formation de Médecine Nutritionnelle et Fonctionnelle
-        {"\n"}NutriHealth Academy
+        {"\n"}<em>NutriHealth Academy</em>
       </>
     ),
   },
@@ -127,8 +127,8 @@ const autresFormations: DiplomeData[] = [
   },
 ];
 const DiplomeItem = ({ item }: { item: DiplomeData }) => (
-  <div className="flex items-center gap-2.5">
-    <div className="w-6 h-6 rounded-md bg-sage-light flex items-center justify-center shrink-0">
+  <div className="flex items-start gap-2.5">
+    <div className="w-6 h-6 rounded-md bg-sage-light flex items-center justify-center shrink-0 mt-0.5">
       <item.icon className="w-3 h-3 text-sage" />
     </div>
     <p className="text-sm text-foreground leading-relaxed whitespace-pre-line">{item.content}</p>
