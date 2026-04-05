@@ -112,7 +112,7 @@ const autresFormations: DiplomeData[] = [
     content: (
       <>
         Cycle de Formation de Médecine Nutritionnelle et Fonctionnelle
-        {"\n"}NutriHealth Academy
+        {"\n"}<em>NutriHealth Academy</em>
       </>
     ),
   },
