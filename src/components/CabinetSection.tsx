@@ -40,7 +40,7 @@ const principaux: DiplomeData[] = [
   },
 ];
 
-const autres: DiplomeData[] = [
+const facultes: DiplomeData[] = [
   {
     icon: ArrowRight,
     content: (
@@ -81,15 +81,6 @@ const autres: DiplomeData[] = [
     icon: ArrowRight,
     content: (
       <>
-        Formation en Thérapies Cognitives et Comportementales
-        {"\n"}(2015-2017)
-      </>
-    ),
-  },
-  {
-    icon: ArrowRight,
-    content: (
-      <>
         DIU de Santé de l'Enfant
         {"\n"}<em>Nancy, Strasbourg, Besançon</em>
       </>
@@ -106,6 +97,34 @@ const autres: DiplomeData[] = [
   },
 ];
 
+const autresFormations: DiplomeData[] = [
+  {
+    icon: ArrowRight,
+    content: (
+      <>
+        Formation en Thérapies Cognitives et Comportementales
+        {"\n"}(2015-2017)
+      </>
+    ),
+  },
+  {
+    icon: ArrowRight,
+    content: (
+      <>
+        Cycle de Formation NutriHealth
+      </>
+    ),
+  },
+  {
+    icon: ArrowRight,
+    content: (
+      <>
+        Formation "Médecine Mitochondriale"
+        {"\n"}<em>Mitochondrial Academy</em> (en cours)
+      </>
+    ),
+  },
+];
 const DiplomeItem = ({ item }: { item: DiplomeData }) => (
   <div className="flex items-center gap-3">
     <div className="w-8 h-8 rounded-md bg-sage-light flex items-center justify-center shrink-0">
