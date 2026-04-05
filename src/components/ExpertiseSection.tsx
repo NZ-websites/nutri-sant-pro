@@ -18,7 +18,7 @@ const expertises = [
     icon: Microscope,
     title: "Médecine Fonctionnelle",
     description:
-      "Étude approfondie des symptômes présentés et recherche de leur cause fonctionnelle, parfois à l'aide de bilans spécialisés. La Médecine Fonctionnelle est une façon d'aborder l'individu dans son intégralité biologique, physique et mentale.",
+      "Étude approfondie des symptômes présentés et recherche de leur cause fonctionnelle, parfois à l'aide de bilans spécialisés. La médecine fonctionnelle aborde la personne dans son individualité et son intégralité biologique, physique et mentale. Il ne s'agit pas d'une médecine alternative mais d'une vision transversale basée sur les connaissances en biochimie, génétique et métabolisme.",
   },
 ];
 
