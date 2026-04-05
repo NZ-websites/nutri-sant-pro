@@ -22,12 +22,14 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
               Un accompagnement médical bienveillant et personnalisé pour vous aider à optimiser votre santé, à accéder à un équilibre alimentaire adéquat et faire évoluer vos habitudes pour les inscrire dans la durée.
             </p>
             <div className={`max-w-lg rounded-xl border border-border bg-card/60 px-5 py-4 shadow-sm ${revealClass(visible, "up")} delay-300`}>
-              <p className="text-muted-foreground whitespace-pre-line text-base leading-relaxed">
-                Nutrition – MicroNutrition – Prévention{"\n"}
-                Suivi médical de perte de poids{"\n"}
-                Troubles du comportement alimentaire{"\n"}
-                Troubles fonctionnels
-              </p>
+              <ul className="space-y-1.5 text-muted-foreground text-base">
+                {["Nutrition – MicroNutrition – Prévention", "Suivi médical de perte de poids", "Troubles du comportement alimentaire", "Troubles fonctionnels"].map((item) => (
+                  <li key={item} className="flex items-center gap-2">
+                    <ChevronRight className="size-4 text-primary shrink-0" strokeWidth={1.5} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
           <div className={`relative flex flex-col items-center md:items-end gap-6 ${revealClass(visible, "right")} delay-200`}>
