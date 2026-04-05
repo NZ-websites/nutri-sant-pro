@@ -1,4 +1,4 @@
-import { GraduationCap, Award, BookOpen, Brain, Globe, ChevronDown, ChevronUp } from "lucide-react";
+import { GraduationCap, Award, ChevronDown, ChevronUp, ArrowRight } from "lucide-react";
 import TestimonialsSection from "./TestimonialsSection";
 import { ReactNode, useState } from "react";
 import { useScrollReveal, revealClass } from "@/hooks/useScrollReveal";
