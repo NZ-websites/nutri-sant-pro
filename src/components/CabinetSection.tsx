@@ -42,7 +42,7 @@ const principaux: DiplomeData[] = [
 
 const facultes: DiplomeData[] = [
   {
-    icon: ArrowRight,
+    icon: Award,
     content: (
       <>
         DU de Diététique et Hygiène Alimentaire
@@ -51,7 +51,7 @@ const facultes: DiplomeData[] = [
     ),
   },
   {
-    icon: ArrowRight,
+    icon: Award,
     content: (
       <>
         DU de Diabétologie Pratique
@@ -60,7 +60,7 @@ const facultes: DiplomeData[] = [
     ),
   },
   {
-    icon: ArrowRight,
+    icon: Award,
     content: (
       <>
         Nutrition Humaine et Diététique Thérapeutique
@@ -69,7 +69,7 @@ const facultes: DiplomeData[] = [
     ),
   },
   {
-    icon: ArrowRight,
+    icon: Award,
     content: (
       <>
         Certificat de Bases Conceptuelles de la Nutrition Humaine
@@ -78,7 +78,7 @@ const facultes: DiplomeData[] = [
     ),
   },
   {
-    icon: ArrowRight,
+    icon: Award,
     content: (
       <>
         DIU de Santé de l'Enfant
@@ -87,7 +87,7 @@ const facultes: DiplomeData[] = [
     ),
   },
   {
-    icon: ArrowRight,
+    icon: Award,
     content: (
       <>
         DU de Médecine Tropicale
