@@ -17,15 +17,17 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
               Dr Xénia{" "}
               <span className="text-primary">Zanardo</span>
             </h1>
-            <p className={`text-muted-foreground max-w-lg leading-relaxed text-base font-normal ${revealClass(visible, "up")} delay-200`}>
+            <p className={`text-muted-foreground max-w-lg leading-relaxed text-base italic ${revealClass(visible, "up")} delay-200`}>
               Un accompagnement médical bienveillant et personnalisé pour vous aider à optimiser votre santé, à accéder à un équilibre alimentaire adéquat et faire évoluer vos habitudes pour les inscrire dans la durée.
             </p>
-            <p className={`text-muted-foreground max-w-lg leading-relaxed whitespace-pre-line text-base font-normal ${revealClass(visible, "up")} delay-300`}>
-              Nutrition – MicroNutrition – Prévention{"\n"}
-              Suivi médical de perte de poids{"\n"}
-              Troubles du comportement alimentaire{"\n"}
-              Troubles fonctionnels
-            </p>
+            <div className={`max-w-lg rounded-xl border border-border bg-card/60 px-5 py-4 shadow-sm ${revealClass(visible, "up")} delay-300`}>
+              <p className="text-muted-foreground whitespace-pre-line text-base leading-relaxed">
+                Nutrition – MicroNutrition – Prévention{"\n"}
+                Suivi médical de perte de poids{"\n"}
+                Troubles du comportement alimentaire{"\n"}
+                Troubles fonctionnels
+              </p>
+            </div>
           </div>
           <div className={`relative flex flex-col items-center md:items-end gap-6 ${revealClass(visible, "right")} delay-200`}>
             <div className="relative w-64 md:w-80 aspect-square rounded-full overflow-hidden shadow-2xl ring-1 ring-border">
