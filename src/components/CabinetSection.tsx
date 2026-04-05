@@ -111,7 +111,8 @@ const autresFormations: DiplomeData[] = [
     icon: BookOpen,
     content: (
       <>
-        Cycle de Formation NutriHealth
+        Cycle de Formation de Médecine Nutritionnelle et Fonctionnelle
+        {"\n"}NutriHealth Academy
       </>
     ),
   },
