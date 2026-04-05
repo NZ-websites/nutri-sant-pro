@@ -173,14 +173,20 @@ const CabinetSection = () => {
                 showAutres ? "max-h-[800px] opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"
               }`}
             >
-              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Formation en facultés de médecine</p>
+              <p className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+                <ChevronRight className="w-3 h-3" />
+                Formation en facultés de médecine
+              </p>
               <div className="space-y-4">
                 {facultes.map((item, i) => (
                   <DiplomeItem key={i} item={item} />
                 ))}
               </div>
 
-              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mt-6 mb-3">Autres formations</p>
+              <p className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground uppercase tracking-wide mt-6 mb-3">
+                <ChevronRight className="w-3 h-3" />
+                Autres formations
+              </p>
               <div className="space-y-4">
                 {autresFormations.map((item, i) => (
                   <DiplomeItem key={i} item={item} />
