@@ -23,7 +23,7 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
             </p>
             <div className={`max-w-lg rounded-xl border border-border bg-card/60 px-5 py-4 shadow-sm ${revealClass(visible, "up")} delay-300`}>
               <ul className="space-y-1.5 text-muted-foreground text-base">
-                {["Nutrition – MicroNutrition – Prévention", "Suivi médical de perte de poids", "Troubles du comportement alimentaire", "Troubles fonctionnels"].map((item) => (
+                {["Nutrition – micronutrition – prévention", "Suivi médical de perte de poids", "Troubles du comportement alimentaire", "Troubles fonctionnels"].map((item) => (
                   <li key={item} className="flex items-center gap-2">
                     <ChevronRight className="size-4 text-primary shrink-0" strokeWidth={1.5} />
                     {item}
