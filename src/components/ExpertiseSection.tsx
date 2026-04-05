@@ -6,7 +6,7 @@ const expertises = [
     icon: Apple,
     title: "Rééquilibrage Alimentaire & Optimisation de la Santé",
     description:
-      "Un programme alimentaire sur-mesure adapté à votre mode de vie, vos goûts, vos objectifs de santé pour retrouver un poids de forme durable. Optimisation de l'alimentation pour la performance sportive et la récupération. Optimisation de vos habitudes nutritionnelles et globales avec un objectif de prévention santé.",
+      "Un programme alimentaire adapté à votre mode de vie, vos goûts, vos objectifs de santé pour retrouver un poids de forme durable. Optimisation de vos habitudes nutritionnelles et globales avec un objectif de prévention santé ou de performance sportive.",
   },
   {
     icon: HeartPulse,
