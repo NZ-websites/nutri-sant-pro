@@ -1,4 +1,4 @@
-import { GraduationCap, Award, ChevronDown, ChevronUp, ArrowRight } from "lucide-react";
+import { GraduationCap, Award, ChevronDown, ChevronUp, ChevronRight, BookOpen } from "lucide-react";
 import TestimonialsSection from "./TestimonialsSection";
 import { ReactNode, useState } from "react";
 import { useScrollReveal, revealClass } from "@/hooks/useScrollReveal";
@@ -42,7 +42,7 @@ const principaux: DiplomeData[] = [
 
 const facultes: DiplomeData[] = [
   {
-    icon: ArrowRight,
+    icon: Award,
     content: (
       <>
         DU de Diététique et Hygiène Alimentaire
@@ -51,7 +51,7 @@ const facultes: DiplomeData[] = [
     ),
   },
   {
-    icon: ArrowRight,
+    icon: Award,
     content: (
       <>
         DU de Diabétologie Pratique
@@ -60,7 +60,7 @@ const facultes: DiplomeData[] = [
     ),
   },
   {
-    icon: ArrowRight,
+    icon: Award,
     content: (
       <>
         Nutrition Humaine et Diététique Thérapeutique
@@ -69,7 +69,7 @@ const facultes: DiplomeData[] = [
     ),
   },
   {
-    icon: ArrowRight,
+    icon: Award,
     content: (
       <>
         Certificat de Bases Conceptuelles de la Nutrition Humaine
@@ -78,7 +78,7 @@ const facultes: DiplomeData[] = [
     ),
   },
   {
-    icon: ArrowRight,
+    icon: Award,
     content: (
       <>
         DIU de Santé de l'Enfant
@@ -87,7 +87,7 @@ const facultes: DiplomeData[] = [
     ),
   },
   {
-    icon: ArrowRight,
+    icon: Award,
     content: (
       <>
         DU de Médecine Tropicale
@@ -99,7 +99,7 @@ const facultes: DiplomeData[] = [
 
 const autresFormations: DiplomeData[] = [
   {
-    icon: ArrowRight,
+    icon: BookOpen,
     content: (
       <>
         Formation en Thérapies Cognitives et Comportementales
@@ -108,7 +108,7 @@ const autresFormations: DiplomeData[] = [
     ),
   },
   {
-    icon: ArrowRight,
+    icon: BookOpen,
     content: (
       <>
         Cycle de Formation NutriHealth
@@ -116,7 +116,7 @@ const autresFormations: DiplomeData[] = [
     ),
   },
   {
-    icon: ArrowRight,
+    icon: BookOpen,
     content: (
       <>
         Formation "Médecine Mitochondriale"
@@ -126,9 +126,9 @@ const autresFormations: DiplomeData[] = [
   },
 ];
 const DiplomeItem = ({ item }: { item: DiplomeData }) => (
-  <div className="flex items-center gap-3">
-    <div className="w-8 h-8 rounded-md bg-sage-light flex items-center justify-center shrink-0">
-      <item.icon className="w-4 h-4 text-sage" />
+  <div className="flex items-center gap-2.5">
+    <div className="w-6 h-6 rounded-md bg-sage-light flex items-center justify-center shrink-0">
+      <item.icon className="w-3 h-3 text-sage" />
     </div>
     <p className="text-sm text-foreground leading-relaxed whitespace-pre-line">{item.content}</p>
   </div>
@@ -173,14 +173,20 @@ const CabinetSection = () => {
                 showAutres ? "max-h-[800px] opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"
               }`}
             >
-              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Formation en facultés de médecine</p>
+              <p className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+                <ChevronRight className="w-3 h-3" />
+                Formation en facultés de médecine
+              </p>
               <div className="space-y-4">
                 {facultes.map((item, i) => (
                   <DiplomeItem key={i} item={item} />
                 ))}
               </div>
 
-              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mt-6 mb-3">Autres formations</p>
+              <p className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground uppercase tracking-wide mt-6 mb-3">
+                <ChevronRight className="w-3 h-3" />
+                Autres formations
+              </p>
               <div className="space-y-4">
                 {autresFormations.map((item, i) => (
                   <DiplomeItem key={i} item={item} />
