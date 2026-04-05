@@ -99,7 +99,7 @@ const facultes: DiplomeData[] = [
 
 const autresFormations: DiplomeData[] = [
   {
-    icon: ArrowRight,
+    icon: BookOpen,
     content: (
       <>
         Formation en Thérapies Cognitives et Comportementales
@@ -108,7 +108,7 @@ const autresFormations: DiplomeData[] = [
     ),
   },
   {
-    icon: ArrowRight,
+    icon: BookOpen,
     content: (
       <>
         Cycle de Formation NutriHealth
@@ -116,7 +116,7 @@ const autresFormations: DiplomeData[] = [
     ),
   },
   {
-    icon: ArrowRight,
+    icon: BookOpen,
     content: (
       <>
         Formation "Médecine Mitochondriale"
