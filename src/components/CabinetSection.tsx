@@ -1,4 +1,4 @@
-import { GraduationCap, Award, BookOpen, Brain, Globe, ChevronDown, ChevronUp } from "lucide-react";
+import { GraduationCap, Award, ChevronDown, ChevronUp, ArrowRight } from "lucide-react";
 import TestimonialsSection from "./TestimonialsSection";
 import { ReactNode, useState } from "react";
 import { useScrollReveal, revealClass } from "@/hooks/useScrollReveal";
@@ -42,7 +42,7 @@ const principaux: DiplomeData[] = [
 
 const autres: DiplomeData[] = [
   {
-    icon: BookOpen,
+    icon: ArrowRight,
     content: (
       <>
         DU de Diététique et Hygiène Alimentaire
@@ -51,7 +51,7 @@ const autres: DiplomeData[] = [
     ),
   },
   {
-    icon: BookOpen,
+    icon: ArrowRight,
     content: (
       <>
         DU de Diabétologie Pratique
@@ -60,7 +60,7 @@ const autres: DiplomeData[] = [
     ),
   },
   {
-    icon: BookOpen,
+    icon: ArrowRight,
     content: (
       <>
         Nutrition Humaine et Diététique Thérapeutique
@@ -69,7 +69,7 @@ const autres: DiplomeData[] = [
     ),
   },
   {
-    icon: BookOpen,
+    icon: ArrowRight,
     content: (
       <>
         Certificat de Bases Conceptuelles de la Nutrition Humaine
@@ -78,7 +78,7 @@ const autres: DiplomeData[] = [
     ),
   },
   {
-    icon: Brain,
+    icon: ArrowRight,
     content: (
       <>
         Formation en Thérapies Cognitives et Comportementales
@@ -87,17 +87,16 @@ const autres: DiplomeData[] = [
     ),
   },
   {
-    icon: Globe,
+    icon: ArrowRight,
     content: (
       <>
         DIU de Santé de l'Enfant
         {"\n"}<em>Nancy, Strasbourg, Besançon</em>
-
       </>
     ),
   },
   {
-    icon: Globe,
+    icon: ArrowRight,
     content: (
       <>
         DU de Médecine Tropicale
