@@ -82,7 +82,7 @@ const facultes: DiplomeData[] = [
     content: (
       <>
         DIU de Santé de l'Enfant
-        {"\n"}<em>Nancy, Strasbourg, Besançon</em>
+        {"\n"}<em>Facultés de Nancy, Strasbourg, Besançon</em>
       </>
     ),
   },
