@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ChevronRight } from "lucide-react";
 import doctorImg from "@/assets/doctor-portrait.jpg";
 import { useScrollReveal, revealClass } from "@/hooks/useScrollReveal";
 
