@@ -47,35 +47,35 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
   const [bottomRef, bottomVisible] = useScrollReveal<HTMLDivElement>();
 
   return (
-    <section id="tarifs" className="py-20 bg-secondary/40">
+    <section id="tarifs" className="py-12 md:py-20 bg-secondary/40">
       <div className="container max-w-5xl">
         {/* Titre */}
-        <div ref={titleRef} className={`text-center mb-14 ${revealClass(titleVisible, "up")}`}>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+        <div ref={titleRef} className={`text-center mb-8 md:mb-14 ${revealClass(titleVisible, "up")}`}>
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground">
             Honoraires & Remboursements
           </h2>
         </div>
 
         {/* Blocs pédagogiques */}
-        <div ref={blocsRef} className="grid sm:grid-cols-2 gap-5 mb-12">
-          <div className={`rounded-xl border border-border bg-card p-6 space-y-3 shadow-sm ${revealClass(blocsVisible, "left")}`}>
+        <div ref={blocsRef} className="grid sm:grid-cols-2 gap-4 md:gap-5 mb-8 md:mb-12">
+          <div className={`rounded-xl border border-border bg-card p-4 md:p-6 space-y-3 shadow-sm ${revealClass(blocsVisible, "left")}`}>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-sage-light flex items-center justify-center shrink-0">
-                <Stethoscope className="w-5 h-5 text-sage" />
+              <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-sage-light flex items-center justify-center shrink-0">
+                <Stethoscope className="w-4 h-4 md:w-5 md:h-5 text-sage" />
               </div>
-              <h3 className="font-semibold text-foreground">Consultations</h3>
+              <h3 className="font-semibold text-foreground text-sm md:text-base">Consultations</h3>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed text-justify">
               Les consultations en médecine nutritionnelle mêlent consultation de médecine générale et consultation spécialisée en Nutrition. La prise en charge débute par un bilan médical et nutritionnel, ainsi que le recueil de vos habitudes de vie et événements marquants. Il se poursuit avec des exercices de mise en situation chez vous afin d'identifier les comportements inadaptés ou perfectibles, un changement d'habitudes minimal et un éventuel bilan biologique complémentaire. Ceci nous permet de co-construire un programme personnalisé adapté à vos objectifs de santé.
             </p>
           </div>
 
-          <div className={`rounded-xl border border-border bg-card p-6 space-y-3 shadow-sm ${revealClass(blocsVisible, "right")}`} style={{ transitionDelay: "150ms" }}>
+          <div className={`rounded-xl border border-border bg-card p-4 md:p-6 space-y-3 shadow-sm ${revealClass(blocsVisible, "right")}`} style={{ transitionDelay: "150ms" }}>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-sage-light flex items-center justify-center shrink-0">
-                <Receipt className="w-5 h-5 text-sage" />
+              <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-sage-light flex items-center justify-center shrink-0">
+                <Receipt className="w-4 h-4 md:w-5 md:h-5 text-sage" />
               </div>
-              <h3 className="font-semibold text-foreground">Remboursement</h3>
+              <h3 className="font-semibold text-foreground text-sm md:text-base">Remboursement</h3>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               La consultation de Nutrition est une consultation à 2 niveaux :
@@ -93,26 +93,26 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
 
         {/* Tarifs consultations */}
         <div ref={tarifsRef}>
-          <h3 className={`text-xl font-bold text-foreground mb-2 ${revealClass(tarifsVisible, "up")}`}>
+          <h3 className={`text-lg md:text-xl font-bold text-foreground mb-2 ${revealClass(tarifsVisible, "up")}`}>
             Honoraires
           </h3>
-          <p className={`text-xs text-muted-foreground mb-5 italic ${revealClass(tarifsVisible, "up")}`} style={{ transitionDelay: "100ms" }}>
+          <p className={`text-xs text-muted-foreground mb-4 md:mb-5 italic ${revealClass(tarifsVisible, "up")}`} style={{ transitionDelay: "100ms" }}>
             Les tarifs affichés correspondent uniquement à la partie nutrition (Acte Hors Nomenclature).<br />À ces honoraires s'ajoute la partie médicale prise en charge par la Caisse de Maladie.
           </p>
-          <div className="grid sm:grid-cols-2 gap-4 mb-12">
+          <div className="grid sm:grid-cols-2 gap-4 mb-8 md:mb-12">
             {consultations.map((c, i) => (
               <div
                 key={c.titre}
-                className={`rounded-xl border border-border bg-card p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow ${revealClass(tarifsVisible, "scale")}`}
+                className={`rounded-xl border border-border bg-card p-4 md:p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow ${revealClass(tarifsVisible, "scale")}`}
                 style={{ transitionDelay: `${(i + 1) * 100}ms` }}
               >
                 <div>
-                  <div className="flex items-center justify-between mb-1">
+                  <div className="flex items-center justify-between mb-1 gap-2">
                     <h4 className="font-semibold text-foreground text-sm">{c.titre}</h4>
                     <span className="text-primary font-bold tabular-nums whitespace-nowrap">{c.prix}</span>
                   </div>
                   <div className="flex items-center gap-1 text-xs text-muted-foreground mb-2">
-                    <Clock className="w-3.5 h-3.5" />
+                    <Clock className="w-3.5 h-3.5 shrink-0" />
                     {c.duree}
                   </div>
                   <p className="text-xs text-muted-foreground leading-relaxed">{c.description}</p>
@@ -126,7 +126,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
 
             {/* Carte forfaits combinée */}
             <div
-              className={`rounded-xl border border-border bg-card p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow ${revealClass(tarifsVisible, "scale")}`}
+              className={`rounded-xl border border-border bg-card p-4 md:p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow ${revealClass(tarifsVisible, "scale")}`}
               style={{ transitionDelay: `${(consultations.length + 1) * 100}ms` }}
             >
               <div>
@@ -150,7 +150,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
 
         {/* Note importante forfaits */}
         <div ref={forfaitsRef}>
-          <div className={`rounded-lg border border-border bg-secondary/60 p-4 text-xs text-muted-foreground leading-relaxed mb-12 space-y-2 ${revealClass(forfaitsVisible, "up")}`}>
+          <div className={`rounded-lg border border-border bg-secondary/60 p-3 md:p-4 text-xs text-muted-foreground leading-relaxed mb-8 md:mb-12 space-y-2 ${revealClass(forfaitsVisible, "up")}`}>
             <p>
               <strong className="text-foreground">Important :</strong> Les forfaits incluent exclusivement la partie nutrition.
               La partie médicale remboursable par la CPAM n'est pas incluse dans le forfait.
@@ -166,18 +166,18 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
 
         {/* Conventionnement */}
         <div ref={bottomRef} className="grid sm:grid-cols-2 gap-4">
-          <div className={`flex items-start gap-3 p-5 rounded-xl border border-border bg-card shadow-sm ${revealClass(bottomVisible, "left")}`}>
-            <div className="w-10 h-10 rounded-lg bg-sage-light flex items-center justify-center shrink-0">
-              <CreditCard className="w-5 h-5 text-sage" />
+          <div className={`flex items-start gap-3 p-4 md:p-5 rounded-xl border border-border bg-card shadow-sm ${revealClass(bottomVisible, "left")}`}>
+            <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-sage-light flex items-center justify-center shrink-0">
+              <CreditCard className="w-4 h-4 md:w-5 md:h-5 text-sage" />
             </div>
             <div>
               <p className="text-sm font-semibold text-foreground">Secteur 1 — Conventionné</p>
               <p className="text-xs text-muted-foreground mt-1">Base de remboursement Sécurité Sociale. Tiers payant possible.</p>
             </div>
           </div>
-          <div className={`flex items-start gap-3 p-5 rounded-xl border border-border bg-card shadow-sm ${revealClass(bottomVisible, "right")}`} style={{ transitionDelay: "150ms" }}>
-            <div className="w-10 h-10 rounded-lg bg-sage-light flex items-center justify-center shrink-0">
-              <ShieldCheck className="w-5 h-5 text-sage" />
+          <div className={`flex items-start gap-3 p-4 md:p-5 rounded-xl border border-border bg-card shadow-sm ${revealClass(bottomVisible, "right")}`} style={{ transitionDelay: "150ms" }}>
+            <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-sage-light flex items-center justify-center shrink-0">
+              <ShieldCheck className="w-4 h-4 md:w-5 md:h-5 text-sage" />
             </div>
             <div>
               <p className="text-sm font-semibold text-foreground">Carte Vitale acceptée</p>

@@ -41,24 +41,24 @@ const PracticalInfoSection = () => {
   const [mapRef, mapVisible] = useScrollReveal<HTMLDivElement>();
 
   return (
-    <section id="infos" className="py-20">
+    <section id="infos" className="py-12 md:py-20">
       <div className="container">
-        <div ref={titleRef} className={`text-center mb-14 ${revealClass(titleVisible, "up")}`}>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Informations Pratiques</h2>
+        <div ref={titleRef} className={`text-center mb-8 md:mb-14 ${revealClass(titleVisible, "up")}`}>
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground">Informations Pratiques</h2>
         </div>
-        <div ref={gridRef} className="grid md:grid-cols-3 gap-8">
+        <div ref={gridRef} className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-8">
           {infos.map((info, i) => (
             <div
               key={info.title}
-              className={`p-8 rounded-xl border border-border bg-card ${revealClass(gridVisible, "up")}`}
+              className={`p-5 md:p-8 rounded-xl border border-border bg-card ${revealClass(gridVisible, "up")}`}
               style={{ transitionDelay: `${i * 150}ms` }}
             >
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
-                <info.icon className="w-6 h-6 text-primary" />
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 md:mb-5">
+                <info.icon className="w-5 h-5 md:w-6 md:h-6 text-primary" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-4">{info.title}</h3>
+              <h3 className="text-base md:text-lg font-semibold text-foreground mb-3 md:mb-4">{info.title}</h3>
               {info.items.length > 0 && (
-                <ul className="space-y-2">
+                <ul className="space-y-1.5 md:space-y-2">
                   {info.items.map((item, j) => (
                     <li key={j} className="text-sm text-muted-foreground">{item}</li>
                   ))}
@@ -93,18 +93,18 @@ const PracticalInfoSection = () => {
         </div>
 
         {/* Carte */}
-        <div ref={mapRef} className={`mt-12 rounded-xl overflow-hidden border border-border shadow-sm ${revealClass(mapVisible, "scale")}`}>
+        <div ref={mapRef} className={`mt-8 md:mt-12 rounded-xl overflow-hidden border border-border shadow-sm ${revealClass(mapVisible, "scale")}`}>
           <iframe
             title="Localisation du cabinet Dr Zanardo – 30 Boulevard Heurteloup, Tours"
             src="https://www.openstreetmap.org/export/embed.html?bbox=0.6912%2C47.3896%2C0.6972%2C47.3927&layer=mapnik&marker=47.3911572%2C0.6942145"
             width="100%"
             height="320"
-            className="w-full"
+            className="w-full h-[220px] md:h-[320px]"
             style={{ border: 0 }}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
-          <div className="bg-card px-5 py-3 flex items-center justify-between">
+          <div className="bg-card px-4 md:px-5 py-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
             <p className="text-sm text-muted-foreground">
               <MapPin className="inline w-4 h-4 mr-1 -mt-0.5 text-primary" />
               30 Bd Heurteloup, 37000 Tours

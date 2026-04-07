@@ -7,26 +7,26 @@ const ContactSection = () => {
   const [cardsRef, cardsVisible] = useScrollReveal<HTMLDivElement>();
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-12 md:py-20">
       <div className="container max-w-3xl">
-        <div ref={titleRef} className={`text-center mb-14 ${revealClass(titleVisible, "up")}`}>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Nous Contacter</h2>
+        <div ref={titleRef} className={`text-center mb-8 md:mb-14 ${revealClass(titleVisible, "up")}`}>
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground">Nous Contacter</h2>
         </div>
-        <div ref={cardsRef} className="grid sm:grid-cols-2 gap-6">
-          <div className={`rounded-xl border border-border bg-card p-8 text-center space-y-4 ${revealClass(cardsVisible, "left")}`}>
-            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
-              <Phone className="w-6 h-6 text-primary" />
+        <div ref={cardsRef} className="grid sm:grid-cols-2 gap-4 md:gap-6">
+          <div className={`rounded-xl border border-border bg-card p-5 md:p-8 text-center space-y-4 ${revealClass(cardsVisible, "left")}`}>
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <Phone className="w-5 h-5 md:w-6 md:h-6 text-primary" />
             </div>
-            <h3 className="text-lg font-semibold text-foreground">Secrétariat</h3>
+            <h3 className="text-base md:text-lg font-semibold text-foreground">Secrétariat</h3>
             <Button variant="cta" size="lg" className="w-full" asChild>
               <a href="tel:+33247056247">02 47 05 62 47</a>
             </Button>
           </div>
-          <div className={`rounded-xl border border-border bg-card p-8 text-center space-y-4 ${revealClass(cardsVisible, "right")}`} style={{ transitionDelay: "150ms" }}>
-            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
-              <MapPin className="w-6 h-6 text-primary" />
+          <div className={`rounded-xl border border-border bg-card p-5 md:p-8 text-center space-y-4 ${revealClass(cardsVisible, "right")}`} style={{ transitionDelay: "150ms" }}>
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <MapPin className="w-5 h-5 md:w-6 md:h-6 text-primary" />
             </div>
-            <h3 className="text-lg font-semibold text-foreground">Adresse</h3>
+            <h3 className="text-base md:text-lg font-semibold text-foreground">Adresse</h3>
             <p className="text-sm text-muted-foreground">
               Résidence Transparence – 4ᵉ étage<br />30 Boulevard Heurteloup<br />37000 Tours
             </p>

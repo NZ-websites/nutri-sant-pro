@@ -5,9 +5,9 @@ const SiteFooter = () => {
   const [ref, visible] = useScrollReveal<HTMLElement>({ threshold: 0.1 });
 
   return (
-    <footer ref={ref} className="py-14 bg-foreground text-primary-foreground">
+    <footer ref={ref} className="py-10 md:py-14 bg-foreground text-primary-foreground">
       <div className={`container ${revealClass(visible, "up")}`}>
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-10">
           <div>
             <p className="text-lg font-bold mb-3">Dr. Xénia Zanardo</p>
             <p className="text-sm opacity-70 leading-relaxed">
@@ -21,7 +21,7 @@ const SiteFooter = () => {
                 <Phone className="w-4 h-4" /> 02 47 05 62 47
               </a>
               <p className="flex items-center gap-2 text-sm opacity-75">
-              <MapPin className="w-4 h-4" /> Résidence Transparence, 30 Bd Heurteloup, 37000 Tours
+              <MapPin className="w-4 h-4 shrink-0" /> Résidence Transparence, 30 Bd Heurteloup, 37000 Tours
               </p>
             </div>
           </div>
