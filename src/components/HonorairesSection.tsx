@@ -6,9 +6,15 @@ import { useScrollReveal, revealClass } from "@/hooks/useScrollReveal";
 const consultations = [
   {
     titre: "Consultation classique en Nutrition",
-    duree: "40 min",
+    duree: "environ 40 min",
     prix: "51 €",
     description: "1ère consultation, consultation classique en nutrition-diététique.",
+  },
+  {
+    titre: "Consultation courte de suivi",
+    duree: "20 min",
+    prix: "28 €",
+    description: "Consultations périodiques rapprochées en Nutrition-diététique.",
   },
   {
     titre: "Consultation complexe en Nutrition",
@@ -16,23 +22,17 @@ const consultations = [
     prix: "60 – 120 €",
     description: "Optimisation de la santé globale, chirurgie bariatrique, médecine fonctionnelle.",
   },
-  {
-    titre: "Consultation courte de suivi",
-    duree: "20 min",
-    prix: "33 €",
-    description: "Consultations périodiques rapprochées en Nutrition-diététique.",
-  },
 ];
 
 const forfaits = [
   {
-    titre: "Forfait 4 mois",
+    titre: "Suivi 4 mois",
     prix: "180 €",
     detail: "Quel que soit le nombre de consultations sur cette période.",
     recommended: false,
   },
   {
-    titre: "Forfait 6 mois",
+    titre: "Suivi 6 mois",
     prix: "240 €",
     detail: "Quel que soit le nombre de consultations sur cette période.",
     recommended: false,
@@ -170,6 +170,9 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
             </p>
             <p>
               Le patient doit donc se munir de sa <strong className="text-foreground">carte vitale</strong> pour chaque séance.
+            </p>
+            <p className="italic text-muted-foreground">
+              Se renseigner lors d'une consultation.
             </p>
           </div>
         </div>

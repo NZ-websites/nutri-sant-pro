@@ -7,6 +7,7 @@ const infos = [
     title: "Adresse",
     items: [
       "Résidence Transparence – 4ᵉ étage",
+      "Face à la gare",
       "30 Bd Heurteloup",
       "37000 Tours",
     ],
@@ -17,7 +18,7 @@ const infos = [
   },
   {
     icon: Clock,
-    title: "Horaires d'ouverture",
+    title: "Horaires d'ouverture du secrétariat",
     items: [
       "Lundi – Vendredi : 8h00 – 20h00",
       "Samedi : 8h00 – 12h00",
