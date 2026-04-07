@@ -82,10 +82,10 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
             </p>
             <ul className="text-sm text-muted-foreground leading-relaxed text-justify space-y-2 list-disc list-inside">
               <li>
-                La <strong className="text-foreground">partie médicale</strong>, basée sur la consultation classique de médecine générale. Le tarif est de 30 € (ou 35 € avec un courrier de médecin), et est un acte remboursé par votre Caisse de Maladie.
+                La <strong className="text-foreground">partie médicale</strong>, basée sur la consultation classique de médecine générale. Le tarif est de 30 € (ou 35 € avec un courrier de médecin), et est <u>un acte remboursé par votre Caisse de Maladie</u>.
               </li>
               <li>
-                La <strong className="text-foreground">part « Nutrition »</strong> est un Acte Hors Nomenclature (non répertorié et donc non remboursé par la Caisse de Maladie), pouvant être pris en charge par votre mutuelle en fonction de votre contrat. Un reçu vous est remis à cet effet à l'issue de chaque consultation (ou à la fin du forfait). Le tarif est fonction de la complexité de la consultation et du temps passé.
+                La <strong className="text-foreground">part « Nutrition »</strong> est <u>un Acte Hors Nomenclature</u> (non répertorié et donc non remboursé par la Caisse de Maladie), pouvant être pris en charge par votre mutuelle en fonction de votre contrat. Un reçu vous est remis à cet effet à l'issue de chaque consultation (ou à la fin du forfait). Le tarif est fonction de la complexité de la consultation et du temps passé.
               </li>
             </ul>
           </div>
