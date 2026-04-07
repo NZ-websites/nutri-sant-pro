@@ -15,8 +15,7 @@ const HeroSection = ({ onBookClick }: { onBookClick: () => void }) => {
               Médecin Nutritionniste
             </p>
             <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight ${revealClass(visible, "up")} delay-100`}>
-              Dr Xénia{" "}
-              <span className="text-primary">Zanardo</span>
+              <span className="text-primary">Dr Xénia Zanardo</span>
             </h1>
             <p className={`text-muted-foreground max-w-lg leading-relaxed text-base italic ${revealClass(visible, "up")} delay-200`}>
               Un accompagnement médical bienveillant et personnalisé pour vous aider à optimiser votre santé, à accéder à un équilibre alimentaire adéquat et faire évoluer vos habitudes pour les inscrire dans la durée.

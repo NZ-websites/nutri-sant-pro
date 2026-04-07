@@ -26,13 +26,13 @@ const consultations = [
 
 const forfaits = [
   {
-    titre: "Suivi 4 mois",
+    titre: "Suivi de 4 mois",
     prix: "180 €",
     detail: "Quel que soit le nombre de consultations sur cette période.",
     recommended: false,
   },
   {
-    titre: "Suivi 6 mois",
+    titre: "Suivi de 6 mois",
     prix: "240 €",
     detail: "Quel que soit le nombre de consultations sur cette période.",
     recommended: false,

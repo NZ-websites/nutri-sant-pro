@@ -197,10 +197,10 @@ const CabinetSection = () => {
           </div>
           <div ref={rightRef} className={`space-y-8 ${revealClass(rightVisible, "right")}`} style={{ transitionDelay: "150ms" }}>
             <div className="bg-card rounded-2xl border border-border p-8">
-              <h3 className="text-lg font-semibold text-foreground mb-4">Une approche globale</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-4">Une approche globale et personnalisée</h3>
               <p className="text-muted-foreground text-sm leading-relaxed text-justify">
                 Chaque individu est unique. Le Dr Zanardo prend le temps d'écouter et de comprendre votre histoire
-                et vos objectifs pour construire avec vous un plan nutritionnel réaliste et durable et vous aider à faire évoluer vos habitudes pour atteindre vos objectifs grâce à une médecine personnalisée et participative.
+                et vos objectifs pour construire avec vous un plan nutritionnel réaliste et durable. Le suivi vous aide à améliorer votre santé et à faire évoluer vos habitudes pour atteindre vos objectifs grâce à une médecine personnalisée et participative.
               </p>
               <TestimonialsSection />
             </div>
