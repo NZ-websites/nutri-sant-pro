@@ -123,47 +123,34 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
                 </Button>
               </div>
             ))}
+
+            {/* Carte forfaits combinée */}
+            <div
+              className={`rounded-xl border border-border bg-card p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow ${revealClass(tarifsVisible, "scale")}`}
+              style={{ transitionDelay: `${(consultations.length + 1) * 100}ms` }}
+            >
+              <div>
+                <h4 className="font-semibold text-foreground text-sm mb-1">Forfaits « Nutrition » — Suivi Perte de Poids</h4>
+                <p className="text-xs text-muted-foreground italic mb-3">Quel que soit le nombre de consultations sur cette période.</p>
+                <div className="space-y-2">
+                  {forfaits.map((f) => (
+                    <div key={f.titre} className="flex items-center justify-between">
+                      <span className="text-sm text-foreground">{f.titre}</span>
+                      <span className="text-primary font-bold tabular-nums whitespace-nowrap">{f.prix}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <Button variant="outline-primary" size="sm" className="mt-4 w-full" onClick={onBookClick}>
+                Se renseigner lors d'une consultation
+              </Button>
+            </div>
           </div>
         </div>
 
-        {/* Forfaits */}
+        {/* Note importante forfaits */}
         <div ref={forfaitsRef}>
-          <h3 className={`text-xl font-bold text-foreground mb-5 ${revealClass(forfaitsVisible, "up")}`}>
-            Forfaits « Nutrition » — Suivi Perte de Poids
-          </h3>
-          <div className="grid sm:grid-cols-2 gap-4 mb-4">
-            {forfaits.map((f, i) => (
-              <div
-                key={f.titre}
-                className={`relative rounded-xl border p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow ${
-                  f.recommended ? "border-sage bg-sage/5 ring-1 ring-sage/20" : "border-border bg-card"
-                } ${revealClass(forfaitsVisible, "scale")}`}
-                style={{ transitionDelay: `${(i + 1) * 100}ms` }}
-              >
-                {f.recommended && (
-                  <Badge className="absolute -top-2.5 left-4 bg-sage text-sage-foreground hover:bg-sage/90">
-                    <Star className="w-3 h-3 mr-1" />
-                    Le plus choisi
-                  </Badge>
-                )}
-                <div>
-                  <h4 className="font-semibold text-foreground mb-1">{f.titre}</h4>
-                  <p className="text-3xl font-bold text-primary tabular-nums mb-1">{f.prix}</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{f.detail}</p>
-                </div>
-                <Button
-                  variant={f.recommended ? "cta" : "outline-primary"}
-                  size="sm"
-                  className="mt-5 w-full"
-                  onClick={onBookClick}
-                >
-                  <CalendarCheck className="w-4 h-4 mr-1" />
-                  Réserver ce créneau
-                </Button>
-              </div>
-            ))}
-          </div>
-          <div className={`rounded-lg border border-border bg-secondary/60 p-4 text-xs text-muted-foreground leading-relaxed mb-12 space-y-2 ${revealClass(forfaitsVisible, "up")}`} style={{ transitionDelay: "300ms" }}>
+          <div className={`rounded-lg border border-border bg-secondary/60 p-4 text-xs text-muted-foreground leading-relaxed mb-12 space-y-2 ${revealClass(forfaitsVisible, "up")}`}>
             <p>
               <strong className="text-foreground">Important :</strong> Les forfaits incluent exclusivement la partie nutrition.
               La partie médicale remboursable par la CPAM n'est pas incluse dans le forfait.
