@@ -129,8 +129,8 @@ const autresFormations: DiplomeData[] = [
     icon: BookOpen,
     content: (
       <>
-        Cycle de formation du Collège Médical de Nutrition Comportementale
-        {"\n"}<em>Paris</em>
+        Cycle de formation de Nutrition
+        {"\n"}<em>Collège Médical de Nutrition Comportementale</em>
       </>
     ),
   },
