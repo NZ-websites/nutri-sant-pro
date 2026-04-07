@@ -7,7 +7,7 @@ const infos = [
     title: "Adresse",
     items: [
       "Résidence Transparence – 4ᵉ étage",
-      "Face à la gare",
+      <em>Face à la gare</em>,
       "30 Bd Heurteloup",
       "37000 Tours",
     ],
