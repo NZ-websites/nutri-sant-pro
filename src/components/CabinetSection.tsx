@@ -147,7 +147,7 @@ const CabinetSection = () => {
         <div ref={titleRef} className={`text-center mb-14 ${revealClass(titleVisible, "up")}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Docteur Xénia ZANARDO</h2>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto font-sans text-justify">
-            Le Dr Zanardo propose des consultations de médecine nutritionnelle avec une approche intégrative, s'appuyant sur une formation riche et pluridisciplinaire en nutrition, métabolisme et santé.
+            Le Dr Zanardo propose des consultations de médecine nutritionnelle avec une approche intégrative, s'appuyant sur une formation riche et pluridisciplinaire.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-16 items-start">
