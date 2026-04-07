@@ -142,24 +142,23 @@ const CabinetSection = () => {
   const [showAutres, setShowAutres] = useState(false);
 
   return (
-    <section id="parcours" className="py-20">
+    <section id="parcours" className="py-12 md:py-20">
       <div className="container">
-        <div ref={titleRef} className={`text-center mb-14 ${revealClass(titleVisible, "up")}`}>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Docteur Xénia ZANARDO</h2>
-          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto font-sans text-justify">
+        <div ref={titleRef} className={`text-center mb-8 md:mb-14 ${revealClass(titleVisible, "up")}`}>
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground">Docteur Xénia ZANARDO</h2>
+          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto font-sans text-sm md:text-base text-justify">
             Le Dr Zanardo propose des consultations de médecine nutritionnelle avec une approche intégrative, s'appuyant sur une formation riche et pluridisciplinaire.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div ref={leftRef} className={`bg-card rounded-2xl border border-border p-8 ${revealClass(leftVisible, "left")}`}>
-            <h3 className="text-lg font-semibold text-foreground mb-6">Formation & Diplômes</h3>
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
+          <div ref={leftRef} className={`bg-card rounded-2xl border border-border p-5 md:p-8 ${revealClass(leftVisible, "left")}`}>
+            <h3 className="text-base md:text-lg font-semibold text-foreground mb-4 md:mb-6">Formation & Diplômes</h3>
             <div className="space-y-4">
               {principaux.map((item, i) => (
                 <DiplomeItem key={i} item={item} />
               ))}
             </div>
 
-            {/* Bouton toggle pour les autres diplômes */}
             <button
               onClick={() => setShowAutres(!showAutres)}
               className="flex items-center gap-1.5 mt-6 text-xs font-semibold text-sage uppercase tracking-wide hover:text-sage/80 transition-colors"
@@ -168,7 +167,6 @@ const CabinetSection = () => {
               {showAutres ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
             </button>
 
-            {/* Liste dépliable avec animation */}
             <div
               className={`overflow-hidden transition-all duration-500 ease-out ${
                 showAutres ? "max-h-[800px] opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"
@@ -196,8 +194,8 @@ const CabinetSection = () => {
             </div>
           </div>
           <div ref={rightRef} className={`space-y-8 ${revealClass(rightVisible, "right")}`} style={{ transitionDelay: "150ms" }}>
-            <div className="bg-card rounded-2xl border border-border p-8">
-              <h3 className="text-lg font-semibold text-foreground mb-4">Une approche globale et personnalisée</h3>
+            <div className="bg-card rounded-2xl border border-border p-5 md:p-8">
+              <h3 className="text-base md:text-lg font-semibold text-foreground mb-3 md:mb-4">Une approche globale et personnalisée</h3>
               <p className="text-muted-foreground text-sm leading-relaxed text-justify">
                 Chaque individu est unique. Le Dr Zanardo prend le temps d'écouter et de comprendre votre histoire
                 et vos objectifs pour construire avec vous un plan nutritionnel réaliste et durable. Le suivi vous aide à améliorer votre santé et à faire évoluer vos habitudes pour atteindre vos objectifs grâce à une médecine personnalisée et participative.
