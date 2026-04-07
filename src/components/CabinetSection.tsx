@@ -45,7 +45,7 @@ const facultes: DiplomeData[] = [
     icon: Award,
     content: (
       <>
-        DU de Diététique et Hygiène Alimentaire
+        DU de Diabétologie Pratique
         {"\n"}<em>Faculté de Médecine de Tours</em>
       </>
     ),
@@ -54,7 +54,7 @@ const facultes: DiplomeData[] = [
     icon: Award,
     content: (
       <>
-        DU de Diabétologie Pratique
+        DU de Diététique et Hygiène Alimentaire
         {"\n"}<em>Faculté de Médecine de Tours</em>
       </>
     ),
