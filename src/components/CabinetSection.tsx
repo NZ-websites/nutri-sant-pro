@@ -63,7 +63,7 @@ const facultes: DiplomeData[] = [
     icon: Award,
     content: (
       <>
-        Nutrition Humaine et Diététique Thérapeutique
+        Nutrition Humaine, Diététique et Diététique Thérapeutique
         {"\n"}<em>Faculté de Médecine de Nancy</em> (1997-1999)
       </>
     ),
