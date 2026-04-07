@@ -102,8 +102,8 @@ const autresFormations: DiplomeData[] = [
     icon: BookOpen,
     content: (
       <>
-        Formation en Thérapies Cognitives et Comportementales
-        {"\n"}<em>AFTCC</em> (2015-2017)
+        Formation "Médecine Mitochondriale"
+        {"\n"}<em>Mitochondrial Academy</em> (en cours en 2026)
       </>
     ),
   },
@@ -120,8 +120,17 @@ const autresFormations: DiplomeData[] = [
     icon: BookOpen,
     content: (
       <>
-        Formation "Médecine Mitochondriale"
-        {"\n"}<em>Mitochondrial Academy</em> (en cours)
+        Formation 2 ans en Thérapies Cognitives et Comportementales
+        {"\n"}<em>AFTCC</em>
+      </>
+    ),
+  },
+  {
+    icon: BookOpen,
+    content: (
+      <>
+        Cycle de formation de Nutrition Comportementale
+        {"\n"}<em>Collège Médical</em>
       </>
     ),
   },
