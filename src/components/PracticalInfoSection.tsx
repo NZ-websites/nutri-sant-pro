@@ -7,7 +7,7 @@ const infos = [
     title: "Adresse",
     items: [
       "Résidence Transparence – 4ᵉ étage",
-      "Face à la gare",
+      <em>Face à la gare</em>,
       "30 Bd Heurteloup",
       "37000 Tours",
     ],
@@ -59,8 +59,8 @@ const PracticalInfoSection = () => {
               <h3 className="text-lg font-semibold text-foreground mb-4">{info.title}</h3>
               {info.items.length > 0 && (
                 <ul className="space-y-2">
-                  {info.items.map((item) => (
-                    <li key={item} className="text-sm text-muted-foreground">{item}</li>
+                  {info.items.map((item, j) => (
+                    <li key={j} className="text-sm text-muted-foreground">{item}</li>
                   ))}
                 </ul>
               )}
