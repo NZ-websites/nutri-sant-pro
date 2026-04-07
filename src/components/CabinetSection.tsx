@@ -81,7 +81,7 @@ const facultes: DiplomeData[] = [
     icon: Award,
     content: (
       <>
-        DIU de Santé de l'Enfant
+        Diplôme Inter-Universitaire de Santé de l'Enfant
         {"\n"}<em>Facultés de Nancy, Strasbourg, Besançon</em>
       </>
     ),
