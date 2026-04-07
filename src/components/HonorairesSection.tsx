@@ -97,7 +97,7 @@ const HonorairesSection = ({ onBookClick }: { onBookClick: () => void }) => {
             Honoraires
           </h3>
           <p className={`text-xs text-muted-foreground mb-5 italic ${revealClass(tarifsVisible, "up")}`} style={{ transitionDelay: "100ms" }}>
-            Les tarifs affichés correspondent uniquement à la partie nutrition (acte hors nomenclature). À ces honoraires s'ajoute la partie médicale prise en charge par la Caisse de Maladie.
+            Les tarifs affichés correspondent uniquement à la partie nutrition (Acte Hors Nomenclature). À ces honoraires s'ajoute la partie médicale prise en charge par la Caisse de Maladie.
           </p>
           <div className="grid sm:grid-cols-2 gap-4 mb-12">
             {consultations.map((c, i) => (
